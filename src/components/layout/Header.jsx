@@ -68,7 +68,7 @@ function DesktopNavItem({ link, pathname }) {
       <NavigationMenu.Content
         onMouseEnter={() => requestOpen(link.megaMenuKey)}
         onMouseLeave={requestClose}
-        className="absolute top-full left-1/2 ml-4 -translate-x-1/2 pt-2"
+        className="absolute top-full left-1/2 ml-8 -translate-x-1/2 pt-2"
       >
         <AnimatePresence>
           {menuOpen && (

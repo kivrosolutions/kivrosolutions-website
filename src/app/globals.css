@@ -21,11 +21,27 @@ body {
 
 html {
   scrollbar-gutter: stable;
+  scroll-behavior: smooth;
 }
 
 @utility no-scrollbar {
   scrollbar-width: none;
   &::-webkit-scrollbar {
     display: none;
+  }
+}
+
+@utility custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #0137a2 transparent;
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #0137a2;
+    border-radius: 3px;
   }
 }
