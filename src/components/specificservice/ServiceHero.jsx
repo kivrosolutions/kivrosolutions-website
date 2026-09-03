@@ -40,7 +40,7 @@ export default function ServiceHero({
 
   return (
     <section className="bg-[#f6f7fb]">
-      <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-20">
+      <div className="container-custom py-16 sm:py-20">
         {/* Double-pill badge */}
         <span className={`inline-flex rounded-full p-1.5 ${t.badgeRing}`}>
           <span

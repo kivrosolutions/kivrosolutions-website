@@ -76,7 +76,7 @@ export default function ServicesPage() {
               <h2 className="text-xs font-semibold tracking-wider text-zinc-400 uppercase">
                 {cat.key}
               </h2>
-              <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+              <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
                 {categoryServices.map((service) => {
                   const Icon = iconMap[service.icon];
                   return (

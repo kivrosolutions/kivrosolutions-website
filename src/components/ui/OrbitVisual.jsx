@@ -38,7 +38,7 @@ export default function OrbitVisual() {
       whileInView={{ opacity: 1, scale: 1 }}
       viewport={{ once: true, amount: 0.3 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
-      className="relative mx-auto aspect-square w-full max-w-[540px]"
+      className="relative mx-auto aspect-square w-full max-w-[400px]"
     >
       {/* Concentric rings */}
       <div className="absolute inset-0 rounded-full bg-[#0137a2]/10" />
@@ -54,9 +54,9 @@ export default function OrbitVisual() {
           const d = `M ${x} ${y} C ${x} ${y + 90}, ${C} ${y + 95}, ${C} 286`;
           return (
             <g key={s.label}>
-              <path d={d} stroke="#0137a2" strokeOpacity="0.22" strokeWidth="1.2" />
+              <path d={d} stroke="#0137a2" strokeOpacity="0.22" strokeWidth="1" />
               <motion.path
-                d={d} stroke="#0137a2" strokeWidth="1.6" strokeDasharray="3 11"
+                d={d} stroke="#0137a2" strokeWidth="1.2" strokeDasharray="3 11"
                 animate={{ strokeDashoffset: [0, -112] }}
                 transition={{ duration: 2.8, repeat: Infinity, ease: "linear", delay: i * 0.4 }}
               />
@@ -69,9 +69,9 @@ export default function OrbitVisual() {
           const d = `M ${C} 316 C ${C} ${y - 95}, ${x} ${y - 85}, ${x} ${y - 16}`;
           return (
             <g key={i}>
-              <path d={d} stroke="#0137a2" strokeOpacity="0.18" strokeWidth="1.1" />
+              <path d={d} stroke="#0137a2" strokeOpacity="0.18" strokeWidth="0.9" />
               <motion.path
-                d={d} stroke="#0137a2" strokeWidth="1.4" strokeDasharray="3 11"
+                d={d} stroke="#0137a2" strokeWidth="1.1" strokeDasharray="3 11"
                 animate={{ strokeDashoffset: [0, -112] }}
                 transition={{ duration: 3, repeat: Infinity, ease: "linear", delay: i * 0.25 }}
               />
@@ -87,8 +87,8 @@ export default function OrbitVisual() {
           animate={{ scale: [1, 1.8], opacity: [0.6, 0] }}
           transition={{ duration: 2.2, repeat: Infinity, ease: "easeOut" }}
         />
-        <div className="relative flex h-20 w-20 items-center justify-center rounded-full border border-[#0137a2]/70 bg-gradient-to-b from-[#0137a2] to-[#04265f] shadow-[0_0_45px_rgba(1,55,162,0.55)]">
-          <svg className="h-8 w-8 text-white" viewBox="0 0 24 24" fill="currentColor">
+        <div className="relative flex h-14 w-14 items-center justify-center rounded-full border border-[#0137a2]/70 bg-gradient-to-b from-[#0137a2] to-[#04265f] shadow-[0_0_25px_rgba(1,55,162,0.55)]">
+          <svg className="h-5 w-5 text-white" viewBox="0 0 24 24" fill="currentColor">
             <path d="M12 2c1 5 4 8 9 10-5 2-8 5-9 10-1-5-4-8-9-10 5-2 8-5 9-10z" />
           </svg>
         </div>
@@ -100,10 +100,10 @@ export default function OrbitVisual() {
           <motion.div
             animate={{ y: [0, -7, 0] }}
             transition={{ duration: 4 + i, repeat: Infinity, ease: "easeInOut", delay: i * 0.6 }}
-            className="flex items-center gap-2 rounded-lg border border-[#0137a2]/20 bg-white px-3.5 py-2 shadow-sm"
+            className="flex items-center gap-1.5 rounded-md border border-[#0137a2]/20 bg-white px-2.5 py-1.5 shadow-sm"
           >
-            <s.Icon className="h-4 w-4 text-[#0137a2]" />
-            <span className="text-xs font-semibold text-zinc-800 sm:text-sm">{s.label}</span>
+            <s.Icon className="h-3 w-3 text-[#0137a2]" />
+            <span className="text-[10px] font-semibold text-zinc-800 sm:text-[11px]">{s.label}</span>
           </motion.div>
         </div>
       ))}
@@ -114,9 +114,9 @@ export default function OrbitVisual() {
           <motion.div
             animate={{ y: [0, -5, 0] }}
             transition={{ duration: 3 + (i % 4), repeat: Infinity, ease: "easeInOut", delay: i * 0.3 }}
-            className="flex h-9 w-9 items-center justify-center rounded-xl border border-zinc-200 bg-white shadow-md sm:h-10 sm:w-10"
+            className="flex h-7 w-7 items-center justify-center rounded-lg border border-zinc-200 bg-white shadow-md sm:h-8 sm:w-8"
           >
-            <t.Icon className="h-4 w-4" style={{ color: t.color }} />
+            <t.Icon className="h-3 w-3" style={{ color: t.color }} />
           </motion.div>
         </div>
       ))}

@@ -7,7 +7,7 @@ const TRUST = ["Results guaranteed", "Senior team only", "Ship in 6–8 weeks"];
 export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-[#f6f7fb]">
-      <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-14 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:gap-8 lg:py-24">
+      <div className="container-custom grid grid-cols-1 items-center gap-14 py-16 lg:grid-cols-2 lg:gap-8 lg:py-24">
         {/* Left */}
         <div className="max-w-xl">
           {/* Verified badge */}

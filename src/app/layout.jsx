@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono, Bricolage_Grotesque } from "next/font/google";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import WelcomeModalWrapper from "@/components/common/WelcomeModalWrapper";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -31,6 +32,7 @@ export default function RootLayout({ children }) {
       className={`${geistSans.variable} ${geistMono.variable} ${bricolageGrotesque.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col">
+        <WelcomeModalWrapper />
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />

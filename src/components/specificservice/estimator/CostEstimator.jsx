@@ -42,7 +42,7 @@ export default function CostEstimator({ groups = FEATURE_GROUPS, copy = ESTIMATO
 
   return (
     <section id="cost-estimator" className="bg-[#0b0b0d] px-4 py-14 sm:px-6 sm:py-16">
-      <div className="mx-auto max-w-7xl">
+      <div className="container-custom-lg">
         <h2 className="text-center text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
           {copy.heading}
         </h2>

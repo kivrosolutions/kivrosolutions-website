@@ -86,7 +86,7 @@ export default function ServicePageLayout({ service, processTimeline, orbitSpher
         <ServiceHero {...serviceHero} />
       ) : (
         <section className="bg-[#f6f7fb] px-6 pt-32 pb-20">
-          <div className="mx-auto max-w-7xl">
+          <div className="container-custom">
             <Link
               href="/services"
               className="mb-8 inline-flex items-center gap-1 text-sm font-medium text-[#0137a2] hover:text-[#012980]"
@@ -122,7 +122,7 @@ export default function ServicePageLayout({ service, processTimeline, orbitSpher
       {/* Stat Cards */}
       {statCards && statCards.length > 0 && (
         <section className="bg-[#f6f7fb] px-6 pb-10">
-          <div className="mx-auto max-w-7xl">
+          <div className="container-custom">
             <div className="grid gap-4 sm:grid-cols-3">
               {statCards.map((stat) => {
                 const StatIcon = statIconMap[stat.icon];
@@ -153,7 +153,7 @@ export default function ServicePageLayout({ service, processTimeline, orbitSpher
       {/* Features */}
       {featureSection ? (
         <section className="bg-[#f6f7fb] px-6 py-20">
-          <div className="mx-auto max-w-7xl">
+          <div className="container-custom">
             <div className="flex flex-col gap-8 lg:flex-row lg:items-start lg:justify-between">
               <div className="max-w-xl">
                 <p className="text-sm font-semibold tracking-widest text-zinc-400 uppercase">
@@ -168,7 +168,7 @@ export default function ServicePageLayout({ service, processTimeline, orbitSpher
                 {featureSection.description}
               </p>
             </div>
-            <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {featureSection.cards.map((card) => {
                 const CardIcon = featureCardIconMap[card.icon];
                 return (
@@ -186,7 +186,7 @@ export default function ServicePageLayout({ service, processTimeline, orbitSpher
         </section>
       ) : (
         <section className="px-6 py-20">
-          <div className="mx-auto max-w-7xl">
+          <div className="container-custom">
             <h2 className="text-3xl font-bold tracking-tight text-zinc-900">What we do</h2>
             <div className="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
               {service.features.map((feature) => (
@@ -208,7 +208,7 @@ export default function ServicePageLayout({ service, processTimeline, orbitSpher
       {/* Design Case Studies */}
       {designCaseSection && (
         <section className="bg-[#f6f7fb] px-6 py-20">
-          <div className="mx-auto max-w-7xl">
+          <div className="container-custom">
             <div className="flex flex-col gap-8 lg:flex-row lg:items-start lg:justify-between">
               <div className="max-w-xl">
                 <p className="text-sm font-semibold tracking-widest text-zinc-400 uppercase">
@@ -223,7 +223,7 @@ export default function ServicePageLayout({ service, processTimeline, orbitSpher
                 {designCaseSection.description}
               </p>
             </div>
-            <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <div className="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
               {designCaseSection.cards.map((card) => (
                 <DesignCaseCard
                   key={card.title}
@@ -240,7 +240,7 @@ export default function ServicePageLayout({ service, processTimeline, orbitSpher
 
       {/* Process */}
       <section className="bg-[#f6f7fb] px-6 py-20">
-        <div className="mx-auto max-w-7xl">
+        <div className="container-custom">
           <h2 className="text-3xl font-bold tracking-tight text-zinc-900">Our process</h2>
           {projectTimeline ? (
             <div className="mt-10">
@@ -297,7 +297,7 @@ export default function ServicePageLayout({ service, processTimeline, orbitSpher
         </section>
       ) : (
         <section className="px-6 py-20">
-          <div className="mx-auto max-w-7xl rounded-3xl bg-[#0137a2] px-8 py-16 text-center sm:px-16">
+          <div className="container-custom rounded-3xl bg-[#0137a2] px-8 py-16 text-center sm:px-16">
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
               Ready to get started?
             </h2>

@@ -62,34 +62,34 @@ export default function ServiceCard({
 
   return (
     <article
-      className={`group relative w-full cursor-pointer overflow-hidden rounded-2xl p-5 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_16px_35px_-12px_rgba(0,0,0,0.22)] sm:p-6 ${t.surface}`}
+      className={`group relative w-full cursor-pointer overflow-hidden rounded-2xl p-4 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_16px_35px_-12px_rgba(0,0,0,0.22)] sm:p-5 ${t.surface}`}
     >
       {/* Top row: badge + icon */}
       <div className="flex items-start justify-between gap-3">
         <span
-          className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1 font-mono text-[10px] font-bold tracking-[0.18em] uppercase ${t.badgeBg} ${t.badgeText}`}
+          className={`inline-flex items-center gap-1.5 rounded-full px-2.5 py-0.5 font-mono text-[9px] font-bold tracking-[0.18em] uppercase ${t.badgeBg} ${t.badgeText}`}
         >
           <span className={`h-1 w-1 rounded-full ${t.badgeDot}`} />
           {badge}
         </span>
 
         <span
-          className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-xl transition-all duration-300 ease-out group-hover:scale-105 group-hover:rotate-6 group-hover:text-white ${t.iconBg} ${t.iconText} ${t.iconHoverBg}`}
+          className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-xl transition-all duration-300 ease-out group-hover:scale-105 group-hover:rotate-6 group-hover:text-white ${t.iconBg} ${t.iconText} ${t.iconHoverBg}`}
         >
-          {Icon && <Icon className="h-4 w-4" />}
+          {Icon && <Icon className="h-3.5 w-3.5" />}
         </span>
       </div>
 
       {/* Body — sm+ pe 2 columns (width use, height kam) */}
       <div className="mt-4 gap-6 sm:grid sm:grid-cols-[1.5fr_1fr]">
         <div>
-          <h3 className="text-lg font-bold tracking-tight text-zinc-900 sm:text-xl">{title}</h3>
-          <p className={`mt-1 text-sm font-medium italic ${t.accentText}`}>&mdash; {question}</p>
-          <p className="mt-2 text-sm leading-relaxed text-zinc-500">{description}</p>
+          <h3 className="text-base font-bold tracking-tight text-zinc-900 sm:text-lg">{title}</h3>
+          <p className={`mt-1 text-[13px] font-medium italic ${t.accentText}`}>&mdash; {question}</p>
+          <p className="mt-2 text-[13px] leading-relaxed text-zinc-500">{description}</p>
         </div>
 
         {/* Stats — mobile pe side-by-side, desktop pe right column */}
-        <div className="mt-4 grid grid-cols-2 gap-3 border-t border-dashed border-zinc-300 pt-3 sm:mt-0 sm:grid-cols-1 sm:gap-4 sm:border-t-0 sm:border-l sm:pt-0 sm:pl-6">
+        <div className="mt-4 grid grid-cols-2 gap-2 border-t border-dashed border-zinc-300 pt-3 sm:mt-0 sm:grid-cols-1 sm:gap-3 sm:border-t-0 sm:border-l sm:pt-0 sm:pl-5">
           <div>
             <p className="font-mono text-[10px] tracking-[0.18em] text-zinc-500 uppercase">
               Timeline

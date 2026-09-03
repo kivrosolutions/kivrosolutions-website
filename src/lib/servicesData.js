@@ -540,30 +540,79 @@ export const services = [
     longDescription:
       "Modern web applications built with cutting-edge frameworks. From MVPs to enterprise platforms, we deliver fast, accessible, and scalable solutions.",
     heroImage: "/images/services/web.jpg",
-    features: [
+    serviceHero: {
+      theme: "blue",
+      badge: "Service · Web App Development",
+      title: "Websites that scale with your ambition.",
+      accentTitle: "Built to perform. Ready to grow.",
+      description:
+        "Modern web applications built with cutting-edge frameworks. From MVPs to enterprise platforms — fast, accessible, and engineered for scale.",
+      primaryCta: { label: "See our work", href: "#work" },
+      secondaryCta: { label: "Talk to an engineer", href: "/contact" },
+    },
+    statCards: [
+      { accent: "blue", value: "200+", label: "Websites Delivered", icon: "trending-up" },
+      { accent: "green", value: "98%", label: "Core Web Vitals Score", icon: "smile" },
+      { accent: "orange", value: "<2s", label: "Avg. Load Time", icon: "award" },
+    ],
+    featureSection: {
+      label: "CAPABILITIES",
+      heading: "Full-stack web",
+      headingAccent: "development.",
+      description:
+        "From responsive marketing sites to complex SaaS platforms — we pick the right stack and ship fast.",
+      cards: [
+        { accent: "blue", title: "Modern Frameworks", description: "Next.js, React, Vue — whatever fits your team and goals.", icon: "code" },
+        { accent: "green", title: "Full-Stack Capability", description: "Frontend to backend, APIs to databases — we cover the full stack.", icon: "cloud" },
+        { accent: "orange", title: "Performance", description: "Core Web Vitals optimized, fast load times, smooth interactions.", icon: "search" },
+        { accent: "purple", title: "Scalable Architecture", description: "Built to grow with your user base and business demands.", icon: "cpu" },
+      ],
+    },
+    processTimelineSteps: [
       {
-        title: "Modern Frameworks",
-        description: "Next.js, React, Vue — whatever fits your team and goals.",
+        week: "Week 1",
+        title: "Discovery & Architecture",
+        description: "Requirements gathering, tech stack selection, and architecture design. We define the MVP scope and set up the project foundation.",
+        color: "#c2410c",
+        badgeBg: "#f4e0d6",
       },
       {
-        title: "Full-Stack Capability",
-        description: "Frontend to backend, APIs to databases — we cover the full stack.",
+        week: "Week 2–4",
+        title: "Core Development",
+        description: "Iterative sprints building features, APIs, and integrations. You see working builds every week; feedback loops are measured in hours.",
+        color: "#15803d",
+        badgeBg: "#d9e7d6",
       },
       {
-        title: "Performance",
-        description: "Core Web Vitals optimized, fast load times, smooth interactions.",
+        week: "Week 5–6",
+        title: "Testing & Optimization",
+        description: "Performance tuning, accessibility audits, SEO optimization, and cross-browser testing. Core Web Vitals validated before launch.",
+        color: "#0e7490",
+        badgeBg: "#cfe2e7",
       },
       {
-        title: "Scalable Architecture",
-        description: "Built to grow with your user base and business demands.",
+        week: "Final Week",
+        title: "Deploy & Handoff",
+        description: "CI/CD setup, production deployment, monitoring, and full documentation handoff. Ready for real users.",
+        color: "#1d4ed8",
+        badgeBg: "#cfd9ec",
       },
     ],
-    process: [
-      { step: "01", title: "Plan", description: "Architecture design and technology selection." },
-      { step: "02", title: "Develop", description: "Iterative development with continuous integration." },
-      { step: "03", title: "Optimize", description: "Performance tuning and accessibility audits." },
-      { step: "04", title: "Deploy", description: "CI/CD pipelines, monitoring, and ongoing support." },
-    ],
+    fitComparison: {
+      goodFit: [
+        "You need a custom web app, not a template — complexity demands code",
+        "Your team uses React, Next.js, or wants to adopt a modern stack",
+        "Performance and Core Web Vitals are business-critical (SEO, ads, conversions)",
+        "You need integrations — APIs, databases, auth, payments",
+        "You want something that scales from 100 to 100,000 users",
+      ],
+      notFit: [
+        "A simple brochure site with 5 pages — use a no-code tool",
+        "You need it live tomorrow — good software takes sprints, not days",
+        "Budget is under $2k — consider a template or freelance marketplace",
+        "You're not sure what you're building yet — start with our discovery call",
+      ],
+    },
     meta: {
       title: "Web App Development - Kivro Solution",
       description:

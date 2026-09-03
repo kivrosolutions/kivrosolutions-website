@@ -73,7 +73,7 @@ const services = [
 export default function Services() {
   return (
     <section className="bg-[#f6f7fb] dark:bg-black">
-      <div className="mx-auto max-w-7xl px-6 pt-10 pb-24">
+      <div className="container-custom pt-10 pb-24">
         <p className="text-sm font-semibold tracking-widest text-zinc-500 uppercase">Services</p>
         <h2 className="mt-4 text-3xl font-bold tracking-tight text-zinc-900 sm:text-4xl dark:text-zinc-50">
           Six ways to engage.
@@ -81,7 +81,7 @@ export default function Services() {
           <span style={{ color: "#0137a2" }}>One team</span> behind all of them.
         </h2>
 
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((service) => (
             <ServiceCard
               key={service.title}

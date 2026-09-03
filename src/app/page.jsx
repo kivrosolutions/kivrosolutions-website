@@ -30,9 +30,9 @@ export default function Home() {
       <Hero />
             {/* Stats Section */}
       <section className="bg-[#f6f7fb]">
-        <div className="mx-auto max-w-7xl px-6 pt-10 pb-2">
+        <div className="container-custom pt-10 pb-2">
          
-          <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+           <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {stats.map((stat) => (
               <StatCard
                 key={stat.label}
@@ -52,7 +52,7 @@ export default function Home() {
 
       {/* Project Timeline Section */}
       <section className="bg-[#f6f7fb]">
-        <div className="mx-auto max-w-7xl px-6 py-24 pb-10">
+        <div className="container-custom py-24 pb-10">
           <p className="text-sm font-semibold tracking-widest text-zinc-500 uppercase">Process</p>
           <h2 className="mt-4 text-3xl font-bold tracking-tight text-zinc-900 sm:text-4xl">
             How we ship
@@ -65,12 +65,12 @@ export default function Home() {
 
       {/* Portfolio Section */}
       <section className="bg-[#f6f7fb]">
-        <div className="mx-auto max-w-7xl px-6 pt-10 pb-24">
+        <div className="container-custom pt-10 pb-24">
           <p className="text-sm font-semibold tracking-widest text-zinc-500 uppercase">Portfolio</p>
           <h2 className="mt-4 text-3xl font-bold tracking-tight text-zinc-900 sm:text-4xl">
             Our work speaks
           </h2>
-          <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+           <div className="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
             <PortfolioCard
               title="Data Furnishing"
               description="Credit building platform for data-driven coaches."

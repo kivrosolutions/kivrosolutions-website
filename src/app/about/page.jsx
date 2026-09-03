@@ -1,3 +1,6 @@
+import { MessageCircle } from "lucide-react";
+import JoinTeamCTA from "@/components/aboutpage/JoinTeamCTA";
+
 export const metadata = {
   title: "About Us - Kivro Solution",
   description:
@@ -6,9 +9,14 @@ export const metadata = {
 
 export default function AboutPage() {
   return (
-    <section className="mx-auto max-w-7xl px-6 py-24">
-      <h1 className="text-4xl font-bold tracking-tight">About Us</h1>
-      <p className="mt-4 text-lg text-zinc-600">Content coming soon.</p>
-    </section>
+    <>
+      <JoinTeamCTA />
+      <JoinTeamCTA
+        title="Let's Talk"
+        description="Curious what an AI employee could take off your team's plate? We'll show you live."
+        ctaLabel="Contact Us"
+        icon={MessageCircle}
+      />
+    </>
   );
 }

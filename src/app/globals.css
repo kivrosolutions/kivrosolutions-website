@@ -45,3 +45,24 @@ html {
     border-radius: 3px;
   }
 }
+
+@keyframes fill-right-to-left {
+  0% { width: 0%; margin-left: 100%; }
+  100% { width: 100%; margin-left: 0%; }
+}
+
+@utility container-custom {
+  max-width: 1120px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@utility container-custom-lg {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}

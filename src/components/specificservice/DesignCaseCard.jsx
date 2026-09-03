@@ -10,9 +10,9 @@ export default function DesignCaseCard({
 }) {
   return (
     <Link href={href} className="group relative block w-full">
-      <div className="relative overflow-hidden rounded-[2rem] bg-[#d8d8dc] px-4 pb-4 pt-6 transition-colors duration-500 group-hover:bg-[#dedee2] sm:px-6 sm:pt-8">
+      <div className="relative overflow-hidden rounded-[2rem] bg-[#d8d8dc] px-3 pb-3 pt-5 transition-colors duration-500 group-hover:bg-[#dedee2] sm:px-5 sm:pt-7">
         {/* Figma-style canvas */}
-        <div className="relative mb-16 h-40 transition-transform duration-500 ease-out group-hover:-translate-y-2 sm:h-44">
+        <div className="relative mb-14 h-36 transition-transform duration-500 ease-out group-hover:-translate-y-2 sm:h-40">
           <div className="h-full overflow-hidden rounded-xl border border-black/10 bg-[#fbfbfc] shadow-[0_16px_40px_-12px_rgba(0,0,0,0.35)] [background-image:radial-gradient(rgba(0,0,0,0.05)_1px,transparent_1px)] [background-size:12px_12px]">
             {/* Toolbar */}
             <div className="flex items-center gap-1.5 border-b border-zinc-200 bg-white px-2.5 py-1.5">
@@ -81,7 +81,7 @@ export default function DesignCaseCard({
 
         {/* Glass info card */}
         <div className="absolute inset-x-3 bottom-4">
-          <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-zinc-600/60 p-4 shadow-xl backdrop-blur-xl transition-transform duration-500 ease-out group-hover:scale-[1.02] sm:p-5">
+          <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-zinc-600/60 p-3.5 shadow-xl backdrop-blur-xl transition-transform duration-500 ease-out group-hover:scale-[1.02] sm:p-4">
             <span
               className="pointer-events-none absolute inset-0"
               style={{ background: `radial-gradient(70% 60% at 50% 0%, ${accentColor}b3, rgba(11,11,13,0.35) 70%)` }}
@@ -92,10 +92,10 @@ export default function DesignCaseCard({
                   <path d="M7 17 17 7" />
                   <path d="M7 7h10v10" />
                 </svg>
-                <h3 className="truncate text-lg font-bold tracking-tight text-white sm:text-xl">{title}</h3>
+                <h3 className="truncate text-base font-bold tracking-tight text-white sm:text-lg">{title}</h3>
               </div>
-              <p className="mt-2 truncate text-sm text-zinc-300">{description}</p>
-              <span className="mt-3 inline-flex rounded-full border border-white/40 px-4 py-1.5 text-xs font-medium text-white">
+              <p className="mt-2 truncate text-[13px] text-zinc-300">{description}</p>
+              <span className="mt-3 inline-flex rounded-full border border-white/40 px-3 py-1 text-[11px] font-medium text-white">
                 {tag}
               </span>
             </div>

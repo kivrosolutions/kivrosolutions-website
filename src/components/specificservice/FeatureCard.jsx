@@ -35,15 +35,15 @@ export default function FeatureCard({
 
   return (
     <article
-      className={`group w-full rounded-2xl border border-zinc-200/80 bg-[#f7f7f6] p-4 transition-colors duration-300 sm:p-5 ${a.cardHover}`}
+      className={`group w-full rounded-2xl border border-zinc-200/80 bg-[#f7f7f6] p-3.5 transition-colors duration-300 sm:p-4 ${a.cardHover}`}
     >
       {/* Icon — compact, hover pe solid + white + tilt */}
       <span
-        className={`flex h-11 w-11 items-center justify-center rounded-xl transition-all duration-300 ease-out group-hover:rotate-12 ${a.iconBg} ${a.iconText} ${a.iconHover}`}
+        className={`flex h-9 w-9 items-center justify-center rounded-xl transition-all duration-300 ease-out group-hover:rotate-12 ${a.iconBg} ${a.iconText} ${a.iconHover}`}
       >
         {icon ?? (
           <svg
-            className="h-5 w-5"
+            className="h-4 w-4"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
@@ -59,12 +59,12 @@ export default function FeatureCard({
       </span>
 
       {/* Title */}
-      <h3 className="mt-4 text-base font-bold tracking-tight text-zinc-900 sm:text-lg">
+      <h3 className="mt-3 text-sm font-bold tracking-tight text-zinc-900 sm:text-base">
         {title}
       </h3>
 
       {/* Description */}
-      <p className="mt-2 text-sm leading-relaxed text-zinc-500">{description}</p>
+      <p className="mt-1.5 text-[13px] leading-relaxed text-zinc-500">{description}</p>
     </article>
   );
 }

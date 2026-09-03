@@ -60,7 +60,7 @@ const iconMap = {
 
 function MegaMenuIcon({ icon }) {
   const IconComponent = iconMap[icon];
-  return IconComponent ? <IconComponent size={18} strokeWidth={2} /> : null;
+  return IconComponent ? <IconComponent size={16} strokeWidth={2} /> : null;
 }
 
 export default function MegaMenuPanel({ columns, cta, onSelect }) {
@@ -97,10 +97,10 @@ export default function MegaMenuPanel({ columns, cta, onSelect }) {
       {canScrollUp && (
         <button
           onClick={() => scrollBy(-160)}
-          className="absolute top-2 right-3 z-10 flex h-7 w-7 items-center justify-center rounded-full border border-zinc-200 bg-white text-zinc-500 shadow-md transition-colors hover:text-zinc-900 dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-400 dark:hover:text-zinc-50"
+          className="absolute top-2 right-3 z-10 flex h-6 w-6 items-center justify-center rounded-full border border-zinc-200 bg-white text-zinc-500 shadow-md transition-colors hover:text-zinc-900 dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-400 dark:hover:text-zinc-50"
           aria-label="Scroll up"
         >
-          <ChevronUp size={16} strokeWidth={2.5} />
+          <ChevronUp size={14} strokeWidth={2.5} />
         </button>
       )}
 
@@ -108,29 +108,29 @@ export default function MegaMenuPanel({ columns, cta, onSelect }) {
       {canScrollDown && (
         <button
           onClick={() => scrollBy(160)}
-          className="absolute right-3 bottom-2 z-10 flex h-7 w-7 items-center justify-center rounded-full border border-zinc-200 bg-white text-zinc-500 shadow-md transition-colors hover:text-zinc-900 dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-400 dark:hover:text-zinc-50"
+          className="absolute right-3 bottom-2 z-10 flex h-6 w-6 items-center justify-center rounded-full border border-zinc-200 bg-white text-zinc-500 shadow-md transition-colors hover:text-zinc-900 dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-400 dark:hover:text-zinc-50"
           aria-label="Scroll down"
         >
-          <ChevronDown size={16} strokeWidth={2.5} />
+          <ChevronDown size={14} strokeWidth={2.5} />
         </button>
       )}
 
       <div
         ref={scrollRef}
-        className="no-scrollbar flex max-h-[calc(100vh-96px)] gap-12 overflow-y-auto p-7"
+        className="no-scrollbar flex max-h-[calc(100vh-96px)] gap-8 overflow-y-auto p-5"
       >
         {/* Left: Columns */}
-        <div className="flex gap-10">
+        <div className="flex gap-7">
           {columns.map((column, index) => (
             <div
               key={column.title}
-              className={`w-60 shrink-0 ${
+              className={`w-52 shrink-0 ${
                 index < columns.length - 1
-                  ? "border-r border-zinc-200 pr-10 dark:border-zinc-700"
+                  ? "border-r border-zinc-200 pr-7 dark:border-zinc-700"
                   : ""
               }`}
             >
-              <h3 className="mb-5 text-xs font-semibold tracking-wider text-zinc-400 uppercase">
+              <h3 className="mb-3 text-xs font-semibold tracking-wider text-zinc-400 uppercase">
                 {column.title}
               </h3>
               <ul className="flex flex-col gap-1.5">
@@ -139,18 +139,18 @@ export default function MegaMenuPanel({ columns, cta, onSelect }) {
                     <Link
                       href={item.href}
                       onClick={onSelect}
-                      className={`flex items-start gap-3 rounded-xl p-3 transition-colors ${hoverBgColors[item.badgeColor] || "hover:bg-zinc-100"}`}
+                      className={`flex items-start gap-2.5 rounded-lg p-2.5 transition-colors ${hoverBgColors[item.badgeColor] || "hover:bg-zinc-100"}`}
                     >
                       <div
-                        className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-lg ${badgeColors[item.badgeColor]}`}
+                        className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-lg ${badgeColors[item.badgeColor]}`}
                       >
                         <MegaMenuIcon icon={item.icon} />
                       </div>
                       <div className="min-w-0">
-                        <p className="text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+                        <p className="text-[13px] font-semibold text-zinc-900 dark:text-zinc-100">
                           {item.title}
                         </p>
-                        <p className="mt-1 text-xs leading-relaxed text-zinc-500 dark:text-zinc-400">
+                        <p className="mt-0.5 text-[11px] leading-relaxed text-zinc-500 dark:text-zinc-400">
                           {item.description}
                         </p>
                       </div>
@@ -161,11 +161,11 @@ export default function MegaMenuPanel({ columns, cta, onSelect }) {
 
               {/* View All link */}
               {column.viewAll && (
-                <div className="mt-3 px-9">
+                <div className="mt-2 px-7">
                     <Link
                       href={column.viewAll.href}
                       onClick={onSelect}
-                      className="text-sm font-medium text-[#0137a2] hover:text-[#012980]"
+                      className="text-[13px] font-medium text-[#0137a2] hover:text-[#012980]"
                     >
                     {column.viewAll.label}
                   </Link>
@@ -177,18 +177,18 @@ export default function MegaMenuPanel({ columns, cta, onSelect }) {
 
         {/* Right: CTA Card */}
         {cta && (
-          <div className="flex w-60 shrink-0 flex-col justify-between rounded-2xl bg-gradient-to-br from-zinc-800 to-black p-6">
+          <div className="flex w-52 shrink-0 flex-col justify-between rounded-2xl bg-gradient-to-br from-zinc-800 to-black p-5">
             <div>
-              <p className="text-xs font-semibold tracking-wider text-[#0137a2] uppercase">
+              <p className="text-[11px] font-semibold tracking-wider text-[#0137a2] uppercase">
                 {cta.label}
               </p>
-              <h4 className="mt-3 text-xl leading-snug font-bold text-white">{cta.heading}</h4>
-              <p className="mt-3 text-sm leading-relaxed text-zinc-400">{cta.subtext}</p>
+              <h4 className="mt-2 text-lg leading-snug font-bold text-white">{cta.heading}</h4>
+              <p className="mt-2 text-[13px] leading-relaxed text-zinc-400">{cta.subtext}</p>
             </div>
             <Link
               href={cta.href}
               onClick={onSelect}
-              className="mt-6 inline-flex items-center gap-1 rounded-full bg-[#0137a2] px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-[#012980]"
+              className="mt-4 inline-flex items-center gap-1 rounded-full bg-[#0137a2] px-4 py-2 text-[13px] font-medium text-white transition-colors hover:bg-[#012980]"
             >
               {cta.buttonText} →
             </Link>

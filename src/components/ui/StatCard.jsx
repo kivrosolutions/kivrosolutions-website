@@ -14,10 +14,10 @@ export default function StatCard({
   const a = accents[accent] || accents.orange;
 
   return (
-    <article className="group w-full cursor-pointer rounded-2xl bg-white px-6 py-3 transition-transform duration-300 ease-out hover:-translate-y-1 sm:px-8 sm:py-4">
+    <article className="group w-full cursor-pointer rounded-2xl bg-white px-5 py-3 transition-transform duration-300 ease-out hover:-translate-y-1 sm:px-6 sm:py-3">
       <div className="flex items-center justify-between gap-4">
         <p
-          className={`text-2xl font-semibold tracking-tight text-zinc-900 transition-colors duration-300 sm:text-3xl ${a.hover}`}
+          className={`text-xl font-semibold tracking-tight text-zinc-900 transition-colors duration-300 sm:text-2xl ${a.hover}`}
         >
           {value}
         </p>
@@ -27,7 +27,7 @@ export default function StatCard({
         >
           {icon ?? (
             <svg
-              className="h-7 w-7 sm:h-8 sm:w-8"
+              className="h-6 w-6 sm:h-7 sm:w-7"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
@@ -43,7 +43,7 @@ export default function StatCard({
         </span>
       </div>
 
-      <p className="mt-2 font-mono text-[10px] tracking-[0.08em] text-zinc-500 sm:text-xs">{label}</p>
+      <p className="mt-1.5 font-mono text-[9px] tracking-[0.08em] text-zinc-500 sm:text-[10px]">{label}</p>
     </article>
   );
 }
