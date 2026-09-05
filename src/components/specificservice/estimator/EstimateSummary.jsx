@@ -1,5 +1,6 @@
 import { PLATFORMS } from "@/lib/estimatorData";
 import { formatMoney } from "@/lib/estimator";
+import { withBasePath } from "@/lib/paths";
 
 export default function EstimateSummary({ platform, onPlatform, selectedItems, total, timeline, mailtoHref }) {
   return (
@@ -57,7 +58,7 @@ export default function EstimateSummary({ platform, onPlatform, selectedItems, t
         <p className="mt-3 text-xs text-zinc-400">Total estimate</p>
         <p className="mt-1 text-3xl font-extrabold text-[#7fb0ff]">{formatMoney(total)}</p>
 
-        <a href="/contact" className="mt-4 block rounded-xl bg-[#0137a2] py-3 text-center text-sm font-bold text-white transition-colors hover:bg-[#0246c9]">
+        <a href={withBasePath("/contact")} className="mt-4 block rounded-xl bg-[#0137a2] py-3 text-center text-sm font-bold text-white transition-colors hover:bg-[#0246c9]">
           Book a Call
         </a>
         <a href={mailtoHref} className="mt-2 block rounded-xl border border-zinc-800 bg-[#1b1b1e] py-2.5 text-center text-xs font-semibold text-zinc-300 transition-colors hover:border-zinc-600">

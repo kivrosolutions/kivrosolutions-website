@@ -3,13 +3,14 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import ShowcaseCard from "./ShowcaseCard";
+import { withBasePath } from "@/lib/paths";
 
 /* Cards ka data — positions vw/vh mein hain taake responsive rahein */
 const CARDS = [
-  { src: "/images/image.png", alt: "Team collaborating around a laptop", x: [-5, -38], y: [12, -20], rotate: [5, -8] },
-  { src: "/images/image.png", alt: "Designer sketching wireframes", x: [5, 38], y: [10, -20], rotate: [-5, 8] },
-  { src: "/images/image.png", alt: "Code editor on a dark screen", x: [-4, -38], y: [18, 20], rotate: [4, -7] },
-  { src: "/images/image.png", alt: "Sticky notes on a planning board", x: [4, 38], y: [16, 20], rotate: [-4, 7] },
+  { src: withBasePath("/images/image.png"), alt: "Team collaborating around a laptop", x: [-5, -38], y: [12, -20], rotate: [5, -8] },
+  { src: withBasePath("/images/image.png"), alt: "Designer sketching wireframes", x: [5, 38], y: [10, -20], rotate: [-5, 8] },
+  { src: withBasePath("/images/image.png"), alt: "Code editor on a dark screen", x: [-4, -38], y: [18, 20], rotate: [4, -7] },
+  { src: withBasePath("/images/image.png"), alt: "Sticky notes on a planning board", x: [4, 38], y: [16, 20], rotate: [-4, 7] },
 ];
 
 export default function AboutShowcase() {

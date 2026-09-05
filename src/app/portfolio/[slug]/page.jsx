@@ -1,5 +1,15 @@
 import Link from "next/link";
 
+export function generateStaticParams() {
+  return [
+    { slug: "data-furnishing" },
+    { slug: "clinic-os" },
+    { slug: "fintrack" },
+    { slug: "learnhub" },
+    { slug: "acme-studio" },
+  ];
+}
+
 export default function ProjectPage({ params }) {
   return (
     <section className="mx-auto max-w-7xl px-6 py-24">
