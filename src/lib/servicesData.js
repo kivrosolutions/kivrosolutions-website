@@ -1,3 +1,5 @@
+import { withBasePath } from "@/lib/paths";
+
 export const services = [
   {
     slug: "ux-ui",
@@ -8,7 +10,7 @@ export const services = [
     description: "Intuitive interfaces that delight users.",
     longDescription:
       "We design user experiences that feel natural and look stunning. From research to high-fidelity prototypes, every pixel is intentional.",
-    heroImage: "/images/services/ux-ui.jpg",
+    heroImage: withBasePath("/images/services/ux-ui.jpg"),
     serviceHero: {
       theme: "blue",
       badge: "Service · UX / UI Design",
@@ -256,7 +258,7 @@ export const services = [
     description: "High-performance apps built for scale.",
     longDescription:
       "Native and cross-platform mobile applications engineered for performance, reliability, and seamless user experiences across iOS and Android.",
-    heroImage: "/images/services/mobile.jpg",
+    heroImage: withBasePath("/images/services/mobile.jpg"),
     serviceHero: {
       theme: "blue",
       badge: "Service · Mobile App Development",
@@ -539,7 +541,7 @@ export const services = [
     description: "Dynamic, scalable web solutions for growth.",
     longDescription:
       "Modern web applications built with cutting-edge frameworks. From MVPs to enterprise platforms, we deliver fast, accessible, and scalable solutions.",
-    heroImage: "/images/services/web.jpg",
+    heroImage: withBasePath("/images/services/web.jpg"),
     serviceHero: {
       theme: "blue",
       badge: "Service · Web App Development",
@@ -635,7 +637,7 @@ export const services = [
     description: "Secure, adaptable cloud architectures.",
     longDescription:
       "Cloud-native solutions designed for reliability, security, and cost efficiency. We architect and build on AWS, GCP, and Azure.",
-    heroImage: "/images/services/cloud.jpg",
+    heroImage: withBasePath("/images/services/cloud.jpg"),
     features: [
       {
         title: "Cloud Architecture",
@@ -682,7 +684,7 @@ export const services = [
     description: "Smarter, faster, more responsive AI.",
     longDescription:
       "We build AI-native applications that learn, adapt, and deliver intelligent experiences from day one. Not AI as a feature — AI as the foundation.",
-    heroImage: "/images/services/ai-native.jpg",
+    heroImage: withBasePath("/images/services/ai-native.jpg"),
     features: [
       {
         title: "LLM Integration",
@@ -729,7 +731,7 @@ export const services = [
     description: "Agents that automate tasks and coordinate workflows.",
     longDescription:
       "Autonomous AI agents that handle complex, multi-step tasks — coordinating across tools, systems, and data sources without human intervention.",
-    heroImage: "/images/services/ai-agents.jpg",
+    heroImage: withBasePath("/images/services/ai-agents.jpg"),
     features: [
       {
         title: "Task Automation",
@@ -776,7 +778,7 @@ export const services = [
     description: "Bridging physical and digital for real-world impact.",
     longDescription:
       "End-to-end IoT solutions — from embedded firmware to cloud dashboards. We connect devices, collect data, and build the software that makes it all useful.",
-    heroImage: "/images/services/iot.jpg",
+    heroImage: withBasePath("/images/services/iot.jpg"),
     features: [
       {
         title: "Embedded Systems",
@@ -823,7 +825,7 @@ export const services = [
     description: "Evaluate your data and systems for AI adoption.",
     longDescription:
       "A comprehensive assessment of your data infrastructure, processes, and readiness for AI. Know exactly where you stand and what to do next.",
-    heroImage: "/images/services/ai-audit.jpg",
+    heroImage: withBasePath("/images/services/ai-audit.jpg"),
     features: [
       {
         title: "Data Assessment",
@@ -870,7 +872,7 @@ export const services = [
     description: "Turn MVPs into market leaders with data-driven growth.",
     longDescription:
       "Growth as a system. We combine AI, analytics, and experimentation to build sustainable growth engines for digital products.",
-    heroImage: "/images/services/growth.jpg",
+    heroImage: withBasePath("/images/services/growth.jpg"),
     features: [
       {
         title: "Growth Strategy",
@@ -917,7 +919,7 @@ export const services = [
     description: "Targeted campaigns for installs, engagement, retention.",
     longDescription:
       "Full-funnel app marketing — from pre-launch buzz to post-install engagement. We drive the right users to your app and keep them coming back.",
-    heroImage: "/images/services/marketing.jpg",
+    heroImage: withBasePath("/images/services/marketing.jpg"),
     features: [
       {
         title: "ASO",
