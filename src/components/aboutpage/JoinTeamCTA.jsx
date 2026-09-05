@@ -23,7 +23,11 @@ const JoinTeamCTA = ({
         className="group mt-10 inline-flex items-center gap-3 rounded-full bg-[#f5a623] px-8 py-4 text-base font-semibold text-[#171310] shadow-[0_12px_30px_-12px_rgba(245,166,35,0.8)] transition-[background-color,transform,box-shadow] hover:-translate-y-0.5 hover:bg-[#ffc05a] hover:shadow-[0_16px_34px_-12px_rgba(245,166,35,0.9)] focus-visible:ring-2 focus-visible:ring-[#f5a623] focus-visible:ring-offset-2 focus-visible:ring-offset-[#171310] focus-visible:outline-none sm:text-lg"
       >
         <span>{ctaLabel}</span>
-        <Icon className="h-5 w-5 transition-transform group-hover:translate-x-0.5" strokeWidth={2} aria-hidden="true" />
+        <Icon
+          className="h-5 w-5 transition-transform group-hover:translate-x-0.5"
+          strokeWidth={2}
+          aria-hidden="true"
+        />
       </Link>
     </section>
   );

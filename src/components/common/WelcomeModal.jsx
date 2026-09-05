@@ -46,7 +46,7 @@ export default function WelcomeModal() {
           >
             {/* Loading Bar */}
             <div className="absolute top-0 left-0 h-1.5 w-full bg-blue-50">
-              <div className="h-full w-full origin-left animate-[fill-right-to-left_6s_ease-in-out_forwards]" />
+              <div className="h-full w-full origin-left animate-[fill-left-to-right_6s_ease-in-out_forwards] bg-gradient-to-r from-blue-600 to-blue-400" />
             </div>
 
             {/* Close Button */}

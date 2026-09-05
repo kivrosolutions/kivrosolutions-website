@@ -49,7 +49,7 @@ export default function ProcessTimeline({ steps = STEPS }) {
     <div ref={ref} className="relative">
       {/* Desktop connector — chote circles ke center pe (20px) */}
       <div
-        className="absolute left-[12.5%] right-[12.5%] top-[19px] hidden md:flex"
+        className="absolute top-[19px] right-[12.5%] left-[12.5%] hidden md:flex"
         aria-hidden="true"
       >
         {steps.slice(0, -1).map((step, i) => (
@@ -88,13 +88,10 @@ export default function ProcessTimeline({ steps = STEPS }) {
               className="flex flex-col items-center"
             >
               <span
-                className="mt-4 inline-flex items-center gap-1.5 rounded-full px-3 py-1 font-mono text-[9px] font-bold uppercase tracking-[0.16em]"
+                className="mt-4 inline-flex items-center gap-1.5 rounded-full px-3 py-1 font-mono text-[9px] font-bold tracking-[0.16em] uppercase"
                 style={{ backgroundColor: step.badgeBg, color: step.color }}
               >
-                <span
-                  className="h-1 w-1 rounded-full"
-                  style={{ backgroundColor: step.color }}
-                />
+                <span className="h-1 w-1 rounded-full" style={{ backgroundColor: step.color }} />
                 {step.week}
               </span>
 

@@ -2,10 +2,9 @@ import { notFound } from "next/navigation";
 import { getServiceBySlug } from "@/lib/servicesData";
 import ServicePageLayout from "@/components/sections/ServicePageLayout";
 import FitComparisonSection from "@/components/specificservice/FitComparisonSection";
-import TechStackMarquee from "@/components/specificservice/TechStackMarquee";
 
 export function generateMetadata() {
-  const service = getServiceBySlug("web");
+  const service = getServiceBySlug("app-marketing");
   return {
     title: service.meta.title,
     description: service.meta.description,
@@ -18,8 +17,8 @@ export function generateMetadata() {
   };
 }
 
-export default function WebAppPage() {
-  const service = getServiceBySlug("web");
+export default function AppMarketingPage() {
+  const service = getServiceBySlug("app-marketing");
   if (!service) notFound();
   return (
     <>
@@ -36,7 +35,6 @@ export default function WebAppPage() {
           notFit={service.fitComparison.notFit}
         />
       )}
-      {service.techStack && <TechStackMarquee technologies={service.techStack} />}
     </>
   );
 }

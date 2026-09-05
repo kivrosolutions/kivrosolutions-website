@@ -14,7 +14,15 @@ function FeatureItem({ item, checked, onToggle }) {
         }`}
       >
         {checked && (
-          <svg className="h-3.5 w-3.5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+          <svg
+            className="h-3.5 w-3.5 text-white"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="3"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
             <path d="M20 6 9 17l-5-5" />
           </svg>
         )}
@@ -37,7 +45,7 @@ export default function FeatureAccordion({ groups, selected, onToggle, openId, o
         <span className="text-xs text-zinc-400">{count} selected</span>
       </div>
 
-      <div className="mt-4 max-h-[320px] space-y-2 overflow-y-auto pr-2 custom-scrollbar">
+      <div className="custom-scrollbar mt-4 max-h-[320px] space-y-2 overflow-y-auto pr-2">
         {groups.map((group) => (
           <div key={group.id}>
             <button
@@ -52,7 +60,12 @@ export default function FeatureAccordion({ groups, selected, onToggle, openId, o
               </span>
               <svg
                 className={`h-4 w-4 text-zinc-400 transition-transform ${openId === group.id ? "rotate-180" : ""}`}
-                viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               >
                 <path d="m6 9 6 6 6-6" />
               </svg>

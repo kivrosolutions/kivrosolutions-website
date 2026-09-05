@@ -1,8 +1,8 @@
 "use client";
 
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Check, X } from 'lucide-react';
+import React from "react";
+import { motion } from "framer-motion";
+import { Check, X } from "lucide-react";
 
 const FitComparisonSection = ({
   goodFit = [
@@ -35,18 +35,17 @@ const FitComparisonSection = ({
   };
 
   return (
-    <section className="w-full bg-[#0a0a0a] py-20 px-4 md:px-8">
-      <div className="container-custom grid grid-cols-1 md:grid-cols-2 gap-6">
-
+    <section className="w-full bg-white px-4 py-10 md:px-8">
+      <div className="container-custom grid grid-cols-1 gap-4 md:grid-cols-2">
         {/* Card 1: A Good Fit */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="border border-orange-900/40 bg-[#111111] rounded-2xl p-8 md:p-10 flex flex-col h-full"
+          className="flex h-full flex-col rounded-2xl border border-[#0137a2]/20 bg-white p-5 shadow-sm md:p-6"
         >
-          <h3 className="text-orange-500 font-bold tracking-widest text-sm mb-8 uppercase">
+          <h3 className="mb-4 text-xs font-bold tracking-widest text-[#0137a2] uppercase">
             A Good Fit
           </h3>
 
@@ -55,15 +54,15 @@ const FitComparisonSection = ({
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="space-y-5"
+            className="space-y-3"
           >
             {goodFit.map((point, index) => (
               <motion.li
                 key={index}
                 variants={itemVariants}
-                className="flex items-start gap-4 text-gray-300 text-sm md:text-base leading-relaxed"
+                className="flex items-start gap-3 text-xs leading-relaxed text-zinc-700 md:text-sm"
               >
-                <Check className="w-5 h-5 text-orange-500 shrink-0 mt-0.5" strokeWidth={2.5} />
+                <Check className="mt-0.5 h-4 w-4 shrink-0 text-[#0137a2]" strokeWidth={2.5} />
                 <span>{point}</span>
               </motion.li>
             ))}
@@ -76,9 +75,9 @@ const FitComparisonSection = ({
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="border border-gray-800 bg-[#111111] rounded-2xl p-8 md:p-10 flex flex-col h-full"
+          className="flex h-full flex-col rounded-2xl border border-zinc-200 bg-white p-5 shadow-sm md:p-6"
         >
-          <h3 className="text-gray-500 font-bold tracking-widest text-sm mb-8 uppercase">
+          <h3 className="mb-4 text-xs font-bold tracking-widest text-zinc-500 uppercase">
             Not a Fit
           </h3>
 
@@ -87,21 +86,20 @@ const FitComparisonSection = ({
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="space-y-5"
+            className="space-y-3"
           >
             {notFit.map((point, index) => (
               <motion.li
                 key={index}
                 variants={itemVariants}
-                className="flex items-start gap-4 text-gray-400 text-sm md:text-base leading-relaxed"
+                className="flex items-start gap-3 text-xs leading-relaxed text-zinc-500 md:text-sm"
               >
-                <X className="w-5 h-5 text-gray-600 shrink-0 mt-0.5" strokeWidth={2.5} />
+                <X className="mt-0.5 h-4 w-4 shrink-0 text-zinc-400" strokeWidth={2.5} />
                 <span>{point}</span>
               </motion.li>
             ))}
           </motion.ul>
         </motion.div>
-
       </div>
     </section>
   );

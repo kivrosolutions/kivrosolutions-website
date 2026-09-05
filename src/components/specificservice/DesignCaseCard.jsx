@@ -10,10 +10,10 @@ export default function DesignCaseCard({
 }) {
   return (
     <Link href={href} className="group relative block w-full">
-      <div className="relative overflow-hidden rounded-[2rem] bg-[#d8d8dc] px-3 pb-3 pt-5 transition-colors duration-500 group-hover:bg-[#dedee2] sm:px-5 sm:pt-7">
+      <div className="relative overflow-hidden rounded-[2rem] bg-[#d8d8dc] px-3 pt-5 pb-3 transition-colors duration-500 group-hover:bg-[#dedee2] sm:px-5 sm:pt-7">
         {/* Figma-style canvas */}
         <div className="relative mb-14 h-36 transition-transform duration-500 ease-out group-hover:-translate-y-2 sm:h-40">
-          <div className="h-full overflow-hidden rounded-xl border border-black/10 bg-[#fbfbfc] shadow-[0_16px_40px_-12px_rgba(0,0,0,0.35)] [background-image:radial-gradient(rgba(0,0,0,0.05)_1px,transparent_1px)] [background-size:12px_12px]">
+          <div className="h-full overflow-hidden rounded-xl border border-black/10 bg-[#fbfbfc] [background-image:radial-gradient(rgba(0,0,0,0.05)_1px,transparent_1px)] [background-size:12px_12px] shadow-[0_16px_40px_-12px_rgba(0,0,0,0.35)]">
             {/* Toolbar */}
             <div className="flex items-center gap-1.5 border-b border-zinc-200 bg-white px-2.5 py-1.5">
               <span className="flex gap-1">
@@ -25,7 +25,10 @@ export default function DesignCaseCard({
                 {title.toLowerCase().replace(/\s+/g, "-")} / frame-01
               </span>
               <span className="flex -space-x-1">
-                <span className="h-3 w-3 rounded-full border border-white" style={{ backgroundColor: accentColor }} />
+                <span
+                  className="h-3 w-3 rounded-full border border-white"
+                  style={{ backgroundColor: accentColor }}
+                />
                 <span className="h-3 w-3 rounded-full border border-white bg-[#e11d48]" />
               </span>
             </div>
@@ -46,26 +49,43 @@ export default function DesignCaseCard({
 
               <span className="self-center text-[8px] text-zinc-400">&rarr;</span>
 
-              <div className="flex-1 rounded-md border bg-white p-1.5" style={{ borderColor: `${accentColor}55` }}>
-                <p className="font-mono text-[5px]" style={{ color: accentColor }}>v2 · final</p>
-                <div className="mt-1 h-1.5 w-3/4 rounded-full" style={{ backgroundColor: accentColor }} />
+              <div
+                className="flex-1 rounded-md border bg-white p-1.5"
+                style={{ borderColor: `${accentColor}55` }}
+              >
+                <p className="font-mono text-[5px]" style={{ color: accentColor }}>
+                  v2 · final
+                </p>
+                <div
+                  className="mt-1 h-1.5 w-3/4 rounded-full"
+                  style={{ backgroundColor: accentColor }}
+                />
                 <div className="mt-1 h-1 w-full rounded-full bg-zinc-200" />
                 <div className="mt-1 h-1 w-2/3 rounded-full bg-zinc-200" />
-                <div className="mt-1.5 h-5 rounded-sm" style={{ backgroundColor: `${accentColor}22` }} />
+                <div
+                  className="mt-1.5 h-5 rounded-sm"
+                  style={{ backgroundColor: `${accentColor}22` }}
+                />
                 <div className="mt-1.5 flex gap-1">
                   <span className="h-2 w-6 rounded-full" style={{ backgroundColor: accentColor }} />
-                  <span className="h-2 w-6 rounded-full border" style={{ borderColor: accentColor }} />
+                  <span
+                    className="h-2 w-6 rounded-full border"
+                    style={{ borderColor: accentColor }}
+                  />
                 </div>
               </div>
             </div>
           </div>
 
           {/* Multiplayer cursors — hover pe move */}
-          <div className="absolute right-3 top-9 transition-transform duration-500 group-hover:-translate-y-1 group-hover:translate-x-1">
+          <div className="absolute top-9 right-3 transition-transform duration-500 group-hover:translate-x-1 group-hover:-translate-y-1">
             <svg className="h-3 w-3" viewBox="0 0 24 24" fill={accentColor}>
               <path d="M4 2l16 8-7 2-3 7z" />
             </svg>
-            <span className="ml-1.5 rounded-full px-1.5 py-0.5 text-[6px] font-semibold text-white" style={{ backgroundColor: accentColor }}>
+            <span
+              className="ml-1.5 rounded-full px-1.5 py-0.5 text-[6px] font-semibold text-white"
+              style={{ backgroundColor: accentColor }}
+            >
               {cursors[0]}
             </span>
           </div>
@@ -84,15 +104,27 @@ export default function DesignCaseCard({
           <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-zinc-600/60 p-3.5 shadow-xl backdrop-blur-xl transition-transform duration-500 ease-out group-hover:scale-[1.02] sm:p-4">
             <span
               className="pointer-events-none absolute inset-0"
-              style={{ background: `radial-gradient(70% 60% at 50% 0%, ${accentColor}b3, rgba(11,11,13,0.35) 70%)` }}
+              style={{
+                background: `radial-gradient(70% 60% at 50% 0%, ${accentColor}b3, rgba(11,11,13,0.35) 70%)`,
+              }}
             />
             <div className="relative">
               <div className="flex items-center gap-2">
-                <svg className="h-4 w-4 shrink-0 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <svg
+                  className="h-4 w-4 shrink-0 text-white"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
                   <path d="M7 17 17 7" />
                   <path d="M7 7h10v10" />
                 </svg>
-                <h3 className="truncate text-base font-bold tracking-tight text-white sm:text-lg">{title}</h3>
+                <h3 className="truncate text-base font-bold tracking-tight text-white sm:text-lg">
+                  {title}
+                </h3>
               </div>
               <p className="mt-2 truncate text-[13px] text-zinc-300">{description}</p>
               <span className="mt-3 inline-flex rounded-full border border-white/40 px-3 py-1 text-[11px] font-medium text-white">

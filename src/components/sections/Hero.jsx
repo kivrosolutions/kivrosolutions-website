@@ -22,13 +22,12 @@ export default function Hero() {
           </div>
 
           <h1 className="mt-6 text-4xl font-bold tracking-tight text-[#0b1b3f] sm:text-5xl lg:text-6xl">
-            Turn ideas into{" "}
-            <span className="text-[#0137a2]">shipped products</span>
+            Turn ideas into <span className="text-[#0137a2]">shipped products</span>
           </h1>
 
           <p className="mt-6 text-base leading-relaxed text-zinc-600 sm:text-lg">
-            Strategy, design, and engineering under one roof — moving at startup
-            speed, with the craft of a senior team.
+            Strategy, design, and engineering under one roof — moving at startup speed, with the
+            craft of a senior team.
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
@@ -48,7 +47,10 @@ export default function Hero() {
 
           <div className="mt-6 flex flex-wrap gap-x-5 gap-y-2">
             {TRUST.map((item) => (
-              <span key={item} className="flex items-center gap-1.5 text-xs text-zinc-500 sm:text-sm">
+              <span
+                key={item}
+                className="flex items-center gap-1.5 text-xs text-zinc-500 sm:text-sm"
+              >
                 <CheckCircle2 className="h-4 w-4 text-[#0137a2]" />
                 {item}
               </span>

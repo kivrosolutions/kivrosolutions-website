@@ -84,7 +84,9 @@ export default function ServiceCard({
       <div className="mt-4 gap-6 sm:grid sm:grid-cols-[1.5fr_1fr]">
         <div>
           <h3 className="text-base font-bold tracking-tight text-zinc-900 sm:text-lg">{title}</h3>
-          <p className={`mt-1 text-[13px] font-medium italic ${t.accentText}`}>&mdash; {question}</p>
+          <p className={`mt-1 text-[13px] font-medium italic ${t.accentText}`}>
+            &mdash; {question}
+          </p>
           <p className="mt-2 text-[13px] leading-relaxed text-zinc-500">{description}</p>
         </div>
 

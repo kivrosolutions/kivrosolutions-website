@@ -2,8 +2,20 @@
 
 import { motion } from "framer-motion";
 import {
-  FileText, Database, Globe, Archive, LineChart, BarChart3, Hash,
-  Share2, Cloud, Palette, PenTool, Code, Mail, Bell,
+  FileText,
+  Database,
+  Globe,
+  Archive,
+  LineChart,
+  BarChart3,
+  Hash,
+  Share2,
+  Cloud,
+  Palette,
+  PenTool,
+  Code,
+  Mail,
+  Bell,
 } from "lucide-react";
 
 const SOURCES = [
@@ -56,7 +68,10 @@ export default function OrbitVisual() {
             <g key={s.label}>
               <path d={d} stroke="#0137a2" strokeOpacity="0.22" strokeWidth="1" />
               <motion.path
-                d={d} stroke="#0137a2" strokeWidth="1.2" strokeDasharray="3 11"
+                d={d}
+                stroke="#0137a2"
+                strokeWidth="1.2"
+                strokeDasharray="3 11"
                 animate={{ strokeDashoffset: [0, -112] }}
                 transition={{ duration: 2.8, repeat: Infinity, ease: "linear", delay: i * 0.4 }}
               />
@@ -71,7 +86,10 @@ export default function OrbitVisual() {
             <g key={i}>
               <path d={d} stroke="#0137a2" strokeOpacity="0.18" strokeWidth="0.9" />
               <motion.path
-                d={d} stroke="#0137a2" strokeWidth="1.1" strokeDasharray="3 11"
+                d={d}
+                stroke="#0137a2"
+                strokeWidth="1.1"
+                strokeDasharray="3 11"
                 animate={{ strokeDashoffset: [0, -112] }}
                 transition={{ duration: 3, repeat: Infinity, ease: "linear", delay: i * 0.25 }}
               />
@@ -81,7 +99,7 @@ export default function OrbitVisual() {
       </svg>
 
       {/* Center hub + pulse */}
-      <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
         <motion.span
           className="absolute inset-0 rounded-full border border-[#0137a2]"
           animate={{ scale: [1, 1.8], opacity: [0.6, 0] }}
@@ -96,24 +114,39 @@ export default function OrbitVisual() {
 
       {/* Floating source chips */}
       {SOURCES.map((s, i) => (
-        <div key={s.label} className="absolute -translate-x-1/2" style={{ left: `${s.x}%`, top: `${s.y}%` }}>
+        <div
+          key={s.label}
+          className="absolute -translate-x-1/2"
+          style={{ left: `${s.x}%`, top: `${s.y}%` }}
+        >
           <motion.div
             animate={{ y: [0, -7, 0] }}
             transition={{ duration: 4 + i, repeat: Infinity, ease: "easeInOut", delay: i * 0.6 }}
             className="flex items-center gap-1.5 rounded-md border border-[#0137a2]/20 bg-white px-2.5 py-1.5 shadow-sm"
           >
             <s.Icon className="h-3 w-3 text-[#0137a2]" />
-            <span className="text-[10px] font-semibold text-zinc-800 sm:text-[11px]">{s.label}</span>
+            <span className="text-[10px] font-semibold text-zinc-800 sm:text-[11px]">
+              {s.label}
+            </span>
           </motion.div>
         </div>
       ))}
 
       {/* Floating tool tiles */}
       {TOOLS.map((t, i) => (
-        <div key={i} className="absolute -translate-x-1/2 -translate-y-1/2" style={{ left: `${t.x}%`, top: `${t.y}%` }}>
+        <div
+          key={i}
+          className="absolute -translate-x-1/2 -translate-y-1/2"
+          style={{ left: `${t.x}%`, top: `${t.y}%` }}
+        >
           <motion.div
             animate={{ y: [0, -5, 0] }}
-            transition={{ duration: 3 + (i % 4), repeat: Infinity, ease: "easeInOut", delay: i * 0.3 }}
+            transition={{
+              duration: 3 + (i % 4),
+              repeat: Infinity,
+              ease: "easeInOut",
+              delay: i * 0.3,
+            }}
             className="flex h-7 w-7 items-center justify-center rounded-lg border border-zinc-200 bg-white shadow-md sm:h-8 sm:w-8"
           >
             <t.Icon className="h-3 w-3" style={{ color: t.color }} />

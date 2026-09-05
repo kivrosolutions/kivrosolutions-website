@@ -24,10 +24,7 @@ export default function CostEstimator({ groups = FEATURE_GROUPS, copy = ESTIMATO
     [selected, groups]
   );
   const multiplier = PLATFORMS.find((p) => p.id === platform)?.multiplier ?? 1;
-  const total = useMemo(
-    () => calcTotal(selectedItems, multiplier),
-    [selectedItems, multiplier]
-  );
+  const total = useMemo(() => calcTotal(selectedItems, multiplier), [selectedItems, multiplier]);
   const timeline = calcTimeline(selectedItems.length);
   const mailtoHref = useMemo(
     () =>

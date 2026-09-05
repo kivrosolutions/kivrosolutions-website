@@ -46,9 +46,15 @@ html {
   }
 }
 
-@keyframes fill-right-to-left {
-  0% { width: 0%; margin-left: 100%; }
-  100% { width: 100%; margin-left: 0%; }
+@keyframes fill-left-to-right {
+  0% {
+    width: 0%;
+    margin-left: 0%;
+  }
+  100% {
+    width: 100%;
+    margin-left: 0%;
+  }
 }
 
 @utility container-custom {

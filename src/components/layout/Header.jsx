@@ -206,7 +206,7 @@ export default function Header() {
         }`}
       >
         <nav
-          className={`mx-auto flex container-custom-lg items-center justify-between py-2 transition-all duration-300 ${scrolled ? "px-6" : "px-10"}`}
+          className={`container-custom-lg mx-auto flex items-center justify-between py-2 transition-all duration-300 ${scrolled ? "px-6" : "px-10"}`}
         >
           {/* Logo */}
           <Link href="/" className="flex items-center">

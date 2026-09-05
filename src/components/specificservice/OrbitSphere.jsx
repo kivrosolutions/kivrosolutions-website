@@ -4,8 +4,18 @@ import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 
 const DEFAULT_ITEMS = [
-  "AMAZON ADS", "META", "GOOGLE", "TIKTOK", "LINKEDIN", "YOUTUBE",
-  "INSTAGRAM", "CRM", "EMAIL", "SEO", "APPS", "WEBSITES",
+  "AMAZON ADS",
+  "META",
+  "GOOGLE",
+  "TIKTOK",
+  "LINKEDIN",
+  "YOUTUBE",
+  "INSTAGRAM",
+  "CRM",
+  "EMAIL",
+  "SEO",
+  "APPS",
+  "WEBSITES",
 ];
 
 /* Empty sides ko fill karne wale floating chips */
@@ -70,10 +80,12 @@ export default function OrbitSphere({
 
     const TILT = 0.35;
     function project(p, angle, R) {
-      const cosA = Math.cos(angle), sinA = Math.sin(angle);
+      const cosA = Math.cos(angle),
+        sinA = Math.sin(angle);
       const x = p[0] * cosA - p[2] * sinA;
       const z = p[0] * sinA + p[2] * cosA;
-      const cosT = Math.cos(TILT), sinT = Math.sin(TILT);
+      const cosT = Math.cos(TILT),
+        sinT = Math.sin(TILT);
       const y = p[1] * cosT - z * sinT;
       const z2 = p[1] * sinT + z * cosT;
       const s = 2.4 / (2.4 + z2);
@@ -153,11 +165,11 @@ export default function OrbitSphere({
     <div ref={wrapRef} className={`relative ${className}`}>
       {/* Side glows — empty edges ko soft fill */}
       <div
-        className="pointer-events-none absolute left-0 top-1/2 hidden h-64 w-64 -translate-y-1/2 rounded-full blur-3xl md:block"
+        className="pointer-events-none absolute top-1/2 left-0 hidden h-64 w-64 -translate-y-1/2 rounded-full blur-3xl md:block"
         style={{ background: `${color}14` }}
       />
       <div
-        className="pointer-events-none absolute right-0 top-1/2 hidden h-64 w-64 -translate-y-1/2 rounded-full blur-3xl md:block"
+        className="pointer-events-none absolute top-1/2 right-0 hidden h-64 w-64 -translate-y-1/2 rounded-full blur-3xl md:block"
         style={{ background: `${color}14` }}
       />
 
@@ -180,7 +192,9 @@ export default function OrbitSphere({
             transition={{ duration: 5 + i, repeat: Infinity, ease: "easeInOut", delay: i * 0.8 }}
             className="rounded-2xl border border-zinc-200 bg-white px-4 py-3 shadow-[0_12px_30px_-12px_rgba(0,0,0,0.18)]"
           >
-            <p className="text-lg font-bold" style={{ color }}>{s.value}</p>
+            <p className="text-lg font-bold" style={{ color }}>
+              {s.value}
+            </p>
             <p className="mt-0.5 text-xs text-zinc-500">{s.label}</p>
           </motion.div>
         </motion.div>

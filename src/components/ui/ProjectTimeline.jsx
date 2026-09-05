@@ -8,7 +8,7 @@ export default function ProjectTimeline({ data }) {
       <div className="overflow-x-auto">
         <div className="min-w-[760px]">
           {/* Phases */}
-          <div className="grid grid-cols-12">
+          <div className="grid" style={{ gridTemplateColumns: `repeat(${totalWeeks}, 1fr)` }}>
             {data.phases.map((p) => (
               <div
                 key={p.label}
@@ -23,7 +23,7 @@ export default function ProjectTimeline({ data }) {
           </div>
 
           {/* Weeks */}
-          <div className="mt-4 grid grid-cols-12">
+          <div className="mt-4 grid" style={{ gridTemplateColumns: `repeat(${totalWeeks}, 1fr)` }}>
             {data.weeks.map((w) => (
               <div key={w.label} className="pr-2">
                 <p className="font-mono text-[9px] font-bold tracking-[0.14em] text-zinc-700 uppercase">
@@ -37,7 +37,11 @@ export default function ProjectTimeline({ data }) {
           {/* Chart area */}
           <div className="relative mt-5">
             {/* Vertical grid lines */}
-            <div className="absolute inset-0 grid grid-cols-12" aria-hidden="true">
+            <div
+              className="absolute inset-0 grid"
+              style={{ gridTemplateColumns: `repeat(${totalWeeks}, 1fr)` }}
+              aria-hidden="true"
+            >
               {data.weeks.map((w) => (
                 <div key={w.label} className="border-l border-zinc-200/80" />
               ))}

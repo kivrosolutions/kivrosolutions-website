@@ -16,16 +16,9 @@ export const megaMenus = {
         items: [
           {
             icon: "pencil",
-            title: "UX / UI Design",
+            title: "UI/UX Design",
             description: "Intuitive interfaces that delight users.",
             href: "/services/ux-ui",
-            badgeColor: "orange",
-          },
-          {
-            icon: "phone",
-            title: "Mobile App Development",
-            description: "High-performance apps built for scale.",
-            href: "/services/mobile",
             badgeColor: "orange",
           },
           {
@@ -36,10 +29,17 @@ export const megaMenus = {
             badgeColor: "orange",
           },
           {
-            icon: "cloud",
-            title: "Cloud Development",
-            description: "Secure, adaptable cloud architectures.",
-            href: "/services/cloud",
+            icon: "phone",
+            title: "Mobile App Development",
+            description: "High-performance apps built for scale.",
+            href: "/services/mobile",
+            badgeColor: "orange",
+          },
+          {
+            icon: "code",
+            title: "No/Low Code Development",
+            description: "Rapid prototyping and deployment without heavy code.",
+            href: "/services/nolow-code",
             badgeColor: "orange",
           },
         ],
@@ -47,6 +47,13 @@ export const megaMenus = {
       {
         title: "INTELLIGENCE",
         items: [
+          {
+            icon: "cpu",
+            title: "AI Automation",
+            description: "Automate workflows with intelligent AI systems.",
+            href: "/services/ai-automation",
+            badgeColor: "green",
+          },
           {
             icon: "code",
             title: "AI-Native Development",
@@ -56,16 +63,9 @@ export const megaMenus = {
           },
           {
             icon: "bot",
-            title: "Agentic AI Systems",
+            title: "AI Chatbots/Agents",
             description: "Agents that automate tasks and coordinate workflows.",
             href: "/services/ai-agents",
-            badgeColor: "green",
-          },
-          {
-            icon: "cpu",
-            title: "IoT & Device Development",
-            description: "Bridging physical and digital for real-world impact.",
-            href: "/services/iot",
             badgeColor: "green",
           },
           {
@@ -82,16 +82,23 @@ export const megaMenus = {
         items: [
           {
             icon: "trending-up",
-            title: "AI Growth Engine",
+            title: "Growth Strategy",
             description: "Turn MVPs into market leaders with data-driven growth.",
             href: "/services/growth",
             badgeColor: "blue",
           },
           {
             icon: "speaker",
-            title: "App Marketing",
+            title: "Digital Marketing",
             description: "Targeted campaigns for installs, engagement, retention.",
             href: "/services/marketing",
+            badgeColor: "blue",
+          },
+          {
+            icon: "speaker",
+            title: "App/Website Marketing",
+            description: "Full-funnel marketing for apps and websites.",
+            href: "/services/app-marketing",
             badgeColor: "blue",
           },
         ],

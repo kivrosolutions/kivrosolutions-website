@@ -31,18 +31,21 @@ export default function CtaBanner({
         <div className="pointer-events-none absolute -bottom-10 left-[6%] h-32 w-32 rounded-full border border-white/10" />
         <div className="pointer-events-none absolute -bottom-4 left-[11%] h-16 w-16 rounded-full border border-white/10" />
         <svg
-          className="pointer-events-none absolute left-[7%] top-6 h-4 w-4 text-white/20"
-          viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"
+          className="pointer-events-none absolute top-6 left-[7%] h-4 w-4 text-white/20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="1.5"
         >
           <path d="M12 5v14M5 12h14" />
         </svg>
-        <div className="pointer-events-none absolute bottom-4 right-[8%] h-1 w-1 rounded-full bg-white/25" />
+        <div className="pointer-events-none absolute right-[8%] bottom-4 h-1 w-1 rounded-full bg-white/25" />
 
         {/* Right-side glow */}
         <motion.div
           animate={{ opacity: [0.7, 1, 0.7] }}
           transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-          className="pointer-events-none absolute -right-16 top-1/2 h-[320px] w-[320px] -translate-y-1/2 rounded-full blur-2xl"
+          className="pointer-events-none absolute top-1/2 -right-16 h-[320px] w-[320px] -translate-y-1/2 rounded-full blur-2xl"
           style={{ background: `radial-gradient(circle, ${primary}99 0%, transparent 65%)` }}
         />
 
@@ -50,7 +53,9 @@ export default function CtaBanner({
         <div className="relative flex flex-col gap-5 lg:flex-row lg:items-center lg:justify-between">
           <div className="max-w-lg">
             {/* Badge */}
-            <span className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-[11px] font-semibold text-white ${badgeClass}`}>
+            <span
+              className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-[11px] font-semibold text-white ${badgeClass}`}
+            >
               <svg className="h-3 w-3" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                 <path d="M12 2c1 5 4 8 9 10-5 2-8 5-9 10-1-5-4-8-9-10 5-2 8-5 9-10z" />
               </svg>
@@ -61,8 +66,7 @@ export default function CtaBanner({
             <h2 className="mt-4 text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-[1.75rem] lg:leading-[1.2]">
               {line1}
               <br />
-              {line2}{" "}
-              <span style={{ color: primaryLight }}>{line2Accent}</span>
+              {line2} <span style={{ color: primaryLight }}>{line2Accent}</span>
             </h2>
 
             {/* Description */}

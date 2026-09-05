@@ -5,7 +5,15 @@ export default function HourlyRateCard({ data = HOURLY_CARD }) {
     <aside className="flex flex-col rounded-3xl border border-[#0137a2]/30 bg-[#0137a2]/10 p-6">
       <div className="flex items-center gap-3">
         <span className="flex h-8 w-8 items-center justify-center rounded-xl bg-[#0137a2]/20 text-[#7fb0ff]">
-          <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <svg
+            className="h-4 w-4"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
             <circle cx="12" cy="12" r="10" />
             <path d="M12 6v6l4 2" />
           </svg>

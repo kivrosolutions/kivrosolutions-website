@@ -55,8 +55,7 @@ export default function ServiceHero({
 
         {/* Headline */}
         <h1 className="mt-6 max-w-5xl text-3xl font-bold tracking-[-0.02em] text-zinc-900 sm:text-4xl md:text-5xl">
-          {title}{" "}
-          <span className={`block ${t.accentText}`}>{accentTitle}</span>
+          {title} <span className={`block ${t.accentText}`}>{accentTitle}</span>
         </h1>
 
         {/* Description */}

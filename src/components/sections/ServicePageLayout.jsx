@@ -76,7 +76,19 @@ const statIconMap = {
   eye: Eye,
 };
 
-export default function ServicePageLayout({ service, processTimeline, orbitSphereItems, serviceHero, ctaBanner, featureSection, statCards, designCaseSection, comparisonTable, projectTimeline, beforeCta }) {
+export default function ServicePageLayout({
+  service,
+  processTimeline,
+  orbitSphereItems,
+  serviceHero,
+  ctaBanner,
+  featureSection,
+  statCards,
+  designCaseSection,
+  comparisonTable,
+  projectTimeline,
+  beforeCta,
+}) {
   const Icon = iconMap[service.icon];
 
   return (
@@ -110,9 +122,7 @@ export default function ServicePageLayout({ service, processTimeline, orbitSpher
                 <h1 className="mt-2 text-4xl font-bold tracking-tight text-zinc-900 sm:text-5xl">
                   {service.title}
                 </h1>
-                <p className="mt-4 max-w-2xl text-lg text-zinc-600">
-                  {service.longDescription}
-                </p>
+                <p className="mt-4 max-w-2xl text-lg text-zinc-600">{service.longDescription}</p>
               </div>
             </div>
           </div>
@@ -239,7 +249,7 @@ export default function ServicePageLayout({ service, processTimeline, orbitSpher
       )}
 
       {/* Process */}
-      <section className="bg-[#f6f7fb] px-6 py-20">
+      <section className="bg-[#f6f7fb] px-6 pt-10 pb-20">
         <div className="container-custom">
           <h2 className="text-3xl font-bold tracking-tight text-zinc-900">Our process</h2>
           {projectTimeline ? (
@@ -256,9 +266,7 @@ export default function ServicePageLayout({ service, processTimeline, orbitSpher
                 <div key={step.step} className="relative">
                   <span className="text-5xl font-bold text-[#0137a2]/10">{step.step}</span>
                   <h3 className="mt-2 text-lg font-semibold text-zinc-900">{step.title}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-zinc-600">
-                    {step.description}
-                  </p>
+                  <p className="mt-2 text-sm leading-relaxed text-zinc-600">{step.description}</p>
                 </div>
               ))}
             </div>

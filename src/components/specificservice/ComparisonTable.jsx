@@ -59,18 +59,41 @@ const DEFAULT_DATA = {
 function ValueIcon({ type }) {
   if (type === "check")
     return (
-      <svg className="mt-0.5 h-4 w-4 shrink-0 text-[#0137a2]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+      <svg
+        className="mt-0.5 h-4 w-4 shrink-0 text-[#0137a2]"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
         <path d="M20 6 9 17l-5-5" />
       </svg>
     );
   if (type === "cross")
     return (
-      <svg className="mt-0.5 h-4 w-4 shrink-0 text-zinc-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <svg
+        className="mt-0.5 h-4 w-4 shrink-0 text-zinc-400"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
         <path d="M18 6 6 18M6 6l12 12" />
       </svg>
     );
   return (
-    <svg className="mt-0.5 h-4 w-4 shrink-0 text-zinc-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+    <svg
+      className="mt-0.5 h-4 w-4 shrink-0 text-zinc-400"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+    >
       <path d="M5 12h14" />
     </svg>
   );
@@ -89,7 +112,10 @@ export default function ComparisonTable({ data = DEFAULT_DATA }) {
             <div className="p-5" />
             {columns.map((col) =>
               col.highlight ? (
-                <div key={col.label} className="border-x border-[#0137a2]/10 bg-[#0137a2]/5 px-5 py-5">
+                <div
+                  key={col.label}
+                  className="border-x border-[#0137a2]/10 bg-[#0137a2]/5 px-5 py-5"
+                >
                   <span className="text-base font-bold tracking-tight text-[#0137a2]">
                     {col.label}
                   </span>

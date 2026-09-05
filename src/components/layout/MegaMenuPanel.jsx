@@ -162,11 +162,11 @@ export default function MegaMenuPanel({ columns, cta, onSelect }) {
               {/* View All link */}
               {column.viewAll && (
                 <div className="mt-2 px-7">
-                    <Link
-                      href={column.viewAll.href}
-                      onClick={onSelect}
-                      className="text-[13px] font-medium text-[#0137a2] hover:text-[#012980]"
-                    >
+                  <Link
+                    href={column.viewAll.href}
+                    onClick={onSelect}
+                    className="text-[13px] font-medium text-[#0137a2] hover:text-[#012980]"
+                  >
                     {column.viewAll.label}
                   </Link>
                 </div>

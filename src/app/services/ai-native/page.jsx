@@ -19,5 +19,13 @@ export function generateMetadata() {
 export default function AINativePage() {
   const service = getServiceBySlug("ai-native");
   if (!service) notFound();
-  return <ServicePageLayout service={service} />;
+  return (
+    <ServicePageLayout
+      service={service}
+      serviceHero={service.serviceHero}
+      statCards={service.statCards}
+      featureSection={service.featureSection}
+      processTimeline={service.processTimelineSteps}
+    />
+  );
 }

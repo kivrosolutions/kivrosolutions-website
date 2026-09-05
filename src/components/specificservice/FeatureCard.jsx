@@ -59,9 +59,7 @@ export default function FeatureCard({
       </span>
 
       {/* Title */}
-      <h3 className="mt-3 text-sm font-bold tracking-tight text-zinc-900 sm:text-base">
-        {title}
-      </h3>
+      <h3 className="mt-3 text-sm font-bold tracking-tight text-zinc-900 sm:text-base">{title}</h3>
 
       {/* Description */}
       <p className="mt-1.5 text-[13px] leading-relaxed text-zinc-500">{description}</p>

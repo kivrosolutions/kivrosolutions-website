@@ -33,7 +33,10 @@ function BrowserMock({ accentColor, url }) {
         </div>
         <div className="mt-2.5 flex gap-1">
           <span className="h-3.5 w-11 rounded-full" style={{ backgroundColor: accentColor }} />
-          <span className="h-3.5 w-11 rounded-full border bg-white" style={{ borderColor: accentColor }} />
+          <span
+            className="h-3.5 w-11 rounded-full border bg-white"
+            style={{ borderColor: accentColor }}
+          />
         </div>
       </div>
     </div>
@@ -72,9 +75,7 @@ function AutomationMock({ accentColor }) {
         </span>
       </div>
       {/* Log */}
-      <p className="font-mono text-[6px] text-zinc-500">
-        ✓ Lead qualified — follow-up sent in 42s
-      </p>
+      <p className="font-mono text-[6px] text-zinc-500">✓ Lead qualified — follow-up sent in 42s</p>
     </div>
   );
 }
@@ -91,13 +92,17 @@ export default function ProjectCard({
 }) {
   return (
     <Link href={href} className="group relative block w-full">
-      <div className="relative overflow-hidden rounded-[2rem] bg-[#d8d8dc] px-3 pb-3 pt-5 transition-colors duration-500 group-hover:bg-[#dedee2] sm:px-5 sm:pt-7">
+      <div className="relative overflow-hidden rounded-[2rem] bg-[#d8d8dc] px-3 pt-5 pb-3 transition-colors duration-500 group-hover:bg-[#dedee2] sm:px-5 sm:pt-7">
         {/* Frame — variant ke hisaab se */}
         <div className="relative mx-auto mb-16 h-36 transition-transform duration-500 ease-out group-hover:-translate-y-2 sm:h-40">
           <div className="h-full overflow-hidden rounded-xl border border-black/20 shadow-[0_16px_40px_-12px_rgba(0,0,0,0.35)]">
             {variant === "website" ? (
               screenshot ? (
-                <img src={screenshot} alt={title} className="h-full w-full object-cover object-top" />
+                <img
+                  src={screenshot}
+                  alt={title}
+                  className="h-full w-full object-cover object-top"
+                />
               ) : (
                 <BrowserMock accentColor={accentColor} url={url} />
               )

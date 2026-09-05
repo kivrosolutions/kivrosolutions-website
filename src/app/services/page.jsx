@@ -90,9 +90,7 @@ export default function ServicesPage() {
                       >
                         {Icon && <Icon size={22} strokeWidth={2} />}
                       </div>
-                      <h3 className="mt-4 text-lg font-semibold text-zinc-900">
-                        {service.title}
-                      </h3>
+                      <h3 className="mt-4 text-lg font-semibold text-zinc-900">{service.title}</h3>
                       <p className="mt-2 text-sm leading-relaxed text-zinc-600">
                         {service.description}
                       </p>

@@ -43,7 +43,9 @@ export default function StatCard({
         </span>
       </div>
 
-      <p className="mt-1.5 font-mono text-[9px] tracking-[0.08em] text-zinc-500 sm:text-[10px]">{label}</p>
+      <p className="mt-1.5 font-mono text-[9px] tracking-[0.08em] text-zinc-500 sm:text-[10px]">
+        {label}
+      </p>
     </article>
   );
 }

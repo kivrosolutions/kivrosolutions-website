@@ -10,29 +10,30 @@ export default function PortfolioCard({
 }) {
   return (
     <Link href={href} className="group relative block w-full">
-      <div className="relative overflow-hidden rounded-[2rem] bg-[#d8d8dc] px-3 pb-3 pt-5 transition-colors duration-500 group-hover:bg-[#dedee2] sm:px-5 sm:pt-7">
+      <div className="relative overflow-hidden rounded-[2rem] bg-[#d8d8dc] px-3 pt-5 pb-3 transition-colors duration-500 group-hover:bg-[#dedee2] sm:px-5 sm:pt-7">
         {/* Phone mockup — compact */}
         <div className="relative mx-auto mb-14 h-56 w-36 transition-transform duration-500 ease-out group-hover:-translate-y-3 sm:h-64 sm:w-40">
           <div className="flex h-full flex-col overflow-hidden rounded-[1.5rem] border-4 border-black bg-black shadow-[0_16px_40px_-12px_rgba(0,0,0,0.4)]">
             <div className="relative flex-1">
-              <div className="absolute left-1/2 top-0 z-10 h-3 w-12 -translate-x-1/2 rounded-b-md bg-black" />
+              <div className="absolute top-0 left-1/2 z-10 h-3 w-12 -translate-x-1/2 rounded-b-md bg-black" />
               {screenshot ? (
                 <img src={screenshot} alt={title} className="h-full w-full object-cover" />
               ) : (
                 <div className="flex h-full flex-col">
-                  <div className="flex items-center justify-center gap-1 bg-[#e9eef6] px-2 pb-3 pt-5">
+                  <div className="flex items-center justify-center gap-1 bg-[#e9eef6] px-2 pt-5 pb-3">
                     <span style={{ color: accentColor }}>&#10022;</span>
                     <span className="text-[10px] font-semibold text-zinc-800">{title}</span>
                   </div>
-                  <div className="flex flex-1 flex-col bg-[#0b0b0d] px-2 pb-4 pt-4 text-center">
+                  <div className="flex flex-1 flex-col bg-[#0b0b0d] px-2 pt-4 pb-4 text-center">
                     <p className="text-[9px] font-medium text-white">
                       For <span style={{ color: accentColor }}>Coaches</span>
                     </p>
-                    <p className="mt-2 text-[10px] font-semibold leading-snug text-white">
+                    <p className="mt-2 text-[10px] leading-snug font-semibold text-white">
                       The Credit Building Software for Entrepreneurs
                     </p>
                     <p className="mt-2 flex-1 text-[6px] leading-relaxed text-zinc-400">
-                      Your Own Credit Builder Program — Report History, Tradelines, Build Client Credit, and Scale.
+                      Your Own Credit Builder Program — Report History, Tradelines, Build Client
+                      Credit, and Scale.
                     </p>
                     <div className="mt-2 flex items-center justify-center gap-1">
                       <span
