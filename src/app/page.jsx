@@ -10,6 +10,7 @@ import AboutShowcase from "@/components/ui/AboutShowcase";
 import Testimonials from "@/components/sections/Testimonials";
 import CTA from "@/components/sections/CTA";
 import { defaultTimeline } from "@/lib/timelineData";
+import { withBasePath } from "@/lib/paths";
 
 const stats = [
   { accent: "orange", value: "$1B+", label: "Raised By Client Startups", icon: DollarSign },
@@ -80,7 +81,7 @@ export default function Home() {
               description="Patient retention engine for healthcare clinics."
               tag="Healthcare automation"
               href="/portfolio/clinic-os"
-              screenshot="/images/clinic-os.png"
+              screenshot={withBasePath("/images/clinic-os.png")}
             />
             <PortfolioCard
               title="FinTrack"

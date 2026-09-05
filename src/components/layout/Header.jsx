@@ -8,6 +8,7 @@ import * as NavigationMenu from "@radix-ui/react-navigation-menu";
 import { AnimatePresence, motion } from "framer-motion";
 import { Home, Grid2X2 } from "lucide-react";
 import { megaMenus } from "@/lib/constants";
+import { withBasePath } from "@/lib/paths";
 import MegaMenuPanel from "./MegaMenuPanel";
 
 const MegaMenuContext = createContext({
@@ -33,18 +34,20 @@ function DesktopNavItem({ link, pathname }) {
   if (!link.hasMegaMenu) {
     return (
       <NavigationMenu.Item>
-        <NavigationMenu.Link
-          href={link.href}
-          onMouseEnter={requestClose}
-          className={`flex items-center justify-center rounded-full text-sm font-medium transition-colors ${
-            isHome ? "h-9 w-9" : "px-4 py-2"
-          } ${
-            isActive
-              ? "bg-[#0137a2] text-white dark:bg-white dark:text-black"
-              : "text-zinc-600 hover:bg-zinc-200 hover:text-zinc-900 dark:text-zinc-400 dark:hover:bg-zinc-700 dark:hover:text-zinc-50"
-          }`}
-        >
-          {isHome ? <Home size={18} strokeWidth={2} /> : link.label}
+        <NavigationMenu.Link asChild>
+          <Link
+            href={link.href}
+            onMouseEnter={requestClose}
+            className={`flex items-center justify-center rounded-full text-sm font-medium transition-colors ${
+              isHome ? "h-9 w-9" : "px-4 py-2"
+            } ${
+              isActive
+                ? "bg-[#0137a2] text-white dark:bg-white dark:text-black"
+                : "text-zinc-600 hover:bg-zinc-200 hover:text-zinc-900 dark:text-zinc-400 dark:hover:bg-zinc-700 dark:hover:text-zinc-50"
+            }`}
+          >
+            {isHome ? <Home size={18} strokeWidth={2} /> : link.label}
+          </Link>
         </NavigationMenu.Link>
       </NavigationMenu.Item>
     );
@@ -211,7 +214,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <Image
-              src="/images/logo.png"
+              src={withBasePath("/images/logo.png")}
               alt="Kivro Solution"
               width={666}
               height={375}

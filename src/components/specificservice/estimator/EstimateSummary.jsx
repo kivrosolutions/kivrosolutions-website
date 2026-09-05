@@ -1,5 +1,6 @@
 import { PLATFORMS } from "@/lib/estimatorData";
 import { formatMoney } from "@/lib/estimator";
+import { withBasePath } from "@/lib/paths";
 
 export default function EstimateSummary({
   platform,
@@ -74,7 +75,7 @@ export default function EstimateSummary({
         <p className="mt-1 text-3xl font-extrabold text-[#7fb0ff]">{formatMoney(total)}</p>
 
         <a
-          href="/contact"
+          href={withBasePath("/contact")}
           className="mt-4 block rounded-xl bg-[#0137a2] py-3 text-center text-sm font-bold text-white transition-colors hover:bg-[#0246c9]"
         >
           Book a Call
