@@ -1,0 +1,814 @@
+/* =========================================
+   Shared careers styles
+========================================= */
+
+.careersPage {
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: #f6f7fb;
+  color: #12161a;
+}
+
+.container {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.eyebrow {
+  margin: 0 0 14px;
+  color: #0137a2;
+  font-size: 0.76rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.sectionTitle {
+  margin: 0;
+  color: #12161a;
+  font-size: clamp(2rem, 3.2vw, 3.25rem);
+  font-weight: 750;
+  line-height: 1.05;
+  letter-spacing: -0.05em;
+}
+
+/* =========================================
+   Careers hero
+========================================= */
+
+.hero {
+  padding: 80px 0 56px;
+}
+
+.heroGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.88fr) minmax(0, 1.12fr);
+  align-items: center;
+  gap: 64px;
+}
+
+.heroContent {
+  max-width: 590px;
+}
+
+.heroTitle {
+  margin: 0;
+  color: #12161a;
+  font-size: clamp(3.5rem, 5.5vw, 6rem);
+  font-weight: 750;
+  line-height: 0.97;
+  letter-spacing: -0.065em;
+}
+
+.heroDescription {
+  max-width: 570px;
+  margin: 22px 0 0;
+  color: #666965;
+  font-size: clamp(1rem, 1.35vw, 1.15rem);
+  line-height: 1.65;
+}
+
+.heroActions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 32px;
+}
+
+.primaryButton,
+.secondaryButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-height: 50px;
+  padding: 0 22px;
+  border-radius: 11px;
+  font-size: 0.9rem;
+  font-weight: 650;
+  text-decoration: none;
+  transition:
+    transform 180ms ease,
+    color 180ms ease,
+    background-color 180ms ease;
+}
+
+.primaryButton {
+  background: #0137a2;
+  color: #ffffff;
+}
+
+.primaryButton:hover {
+  transform: translateY(-2px);
+  background: #0647c7;
+}
+
+.secondaryButton {
+  background: transparent;
+  color: #0137a2;
+}
+
+.secondaryButton:hover {
+  transform: translateX(3px);
+  color: #0647c7;
+}
+
+.primaryButton:focus-visible,
+.secondaryButton:focus-visible {
+  outline: 3px solid rgba(1, 55, 162, 0.3);
+  outline-offset: 3px;
+}
+
+/* =========================================
+   Team gallery
+========================================= */
+
+.teamGallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  min-height: 340px;
+}
+
+.teamImage {
+  position: relative;
+  min-height: 340px;
+  overflow: hidden;
+  border-radius: 16px;
+  background: #e4e4e7;
+}
+
+.teamImage:nth-child(2) {
+  transform: translateY(20px);
+}
+
+.galleryImage {
+  object-fit: cover;
+  transition: transform 450ms ease;
+}
+
+.teamImage:hover .galleryImage {
+  transform: scale(1.025);
+}
+
+/* =========================================
+   Values section
+========================================= */
+
+.valuesSection {
+  padding: 48px 0 78px;
+}
+
+.valuesHeader {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 32px;
+  margin-bottom: 30px;
+}
+
+.valuesDescription {
+  max-width: 520px;
+  margin: 0;
+  color: #70716d;
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.valuesGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.valueCard {
+  padding: 26px 24px;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.valueCard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.valueIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  margin-bottom: 25px;
+  border-radius: 12px;
+  background: #eef3ff;
+  color: #0137a2;
+}
+
+.valueTitle {
+  margin: 0;
+  color: #12161a;
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.valueText {
+  margin: 9px 0 0;
+  color: #71726e;
+  font-size: 0.87rem;
+  line-height: 1.6;
+}
+
+/* =========================================
+   Benefits section
+========================================= */
+
+.benefitsSection {
+  padding: 76px 0;
+  background: #12161a;
+  color: #ffffff;
+}
+
+.benefitsLayout {
+  display: grid;
+  grid-template-columns: minmax(250px, 0.65fr) minmax(0, 1.35fr);
+  align-items: center;
+  gap: 70px;
+}
+
+.benefitsEyebrow {
+  margin: 0 0 14px;
+  color: #8badff;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.benefitsTitle {
+  max-width: 420px;
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(2.2rem, 3.5vw, 3.5rem);
+  font-weight: 750;
+  line-height: 1.05;
+  letter-spacing: -0.05em;
+}
+
+.benefitsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.benefitCard {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  min-height: 98px;
+  padding: 20px;
+  border: 1px solid #3a4247;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.025);
+  transition:
+    background-color 180ms ease,
+    border-color 180ms ease;
+}
+
+.benefitCard:hover {
+  border-color: #59636a;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.benefitIcon {
+  display: inline-flex;
+  flex: 0 0 auto;
+  margin-top: 2px;
+  color: #ffffff;
+}
+
+.benefitTitle {
+  margin: 0;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 650;
+  line-height: 1.3;
+}
+
+.benefitText {
+  margin: 6px 0 0;
+  color: #aeb4b8;
+  font-size: 0.78rem;
+  line-height: 1.5;
+}
+
+/* =========================================
+   Open roles
+========================================= */
+
+.rolesSection {
+  padding: 88px 0 52px;
+}
+
+.rolesHeader {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 32px;
+  margin-bottom: 28px;
+}
+
+.roleFilters {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.roleFilter {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 42px;
+  padding: 0 18px;
+  border: 1px solid #e5e7eb;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #3f3f46;
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    color 180ms ease,
+    background-color 180ms ease,
+    border-color 180ms ease,
+    transform 180ms ease;
+}
+
+.roleFilter:hover:not(.activeFilter) {
+  transform: translateY(-1px);
+  border-color: #d4d4d8;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.roleFilter.activeFilter {
+  border-color: #0137a2;
+  background: #0137a2;
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(1, 55, 162, 0.25);
+}
+
+.filterCount {
+  color: #a1a1aa;
+  font-size: 0.78rem;
+  font-weight: 500;
+}
+
+.activeFilter .filterCount {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.roleFilter:focus-visible {
+  outline: 2px solid rgba(1, 55, 162, 0.4);
+  outline-offset: 2px;
+}
+
+.rolesGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.roleCard {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto auto;
+  align-items: center;
+  gap: 22px;
+  min-height: 88px;
+  padding: 20px 22px;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  background: #ffffff;
+  color: inherit;
+  text-decoration: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  transition:
+    transform 220ms ease,
+    box-shadow 220ms ease;
+}
+
+.roleCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.roleTitle {
+  margin: 0;
+  color: #12161a;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.roleDepartment {
+  margin: 5px 0 0;
+  color: #747571;
+  font-size: 0.8rem;
+}
+
+.roleMeta {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #747571;
+  font-size: 0.78rem;
+  white-space: nowrap;
+}
+
+.roleArrow {
+  display: inline-flex;
+  color: #12161a;
+  transition: transform 180ms ease;
+}
+
+.roleCard:hover .roleArrow {
+  transform: translateX(4px);
+}
+
+.emptyRoles {
+  grid-column: 1 / -1;
+  padding: 50px 24px;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  background: #ffffff;
+  color: #70716d;
+  text-align: center;
+}
+
+/* =========================================
+   Hiring process
+========================================= */
+
+.processSection {
+  padding: 34px 0 76px;
+}
+
+.processHeader {
+  margin-bottom: 27px;
+}
+
+.processGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  border-top: 1px solid #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.processStep {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 28px 24px;
+}
+
+.processStep:not(:last-child)::after {
+  position: absolute;
+  top: 28px;
+  right: 0;
+  width: 1px;
+  height: 48px;
+  background: #e5e7eb;
+  content: "";
+}
+
+.stepNumber {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border: 1px solid #e5e7eb;
+  border-radius: 50%;
+  background: #ffffff;
+  color: #12161a;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.stepTitle {
+  margin: 2px 0 0;
+  color: #12161a;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.stepText {
+  margin: 6px 0 0;
+  color: #737470;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+/* =========================================
+   General application CTA
+========================================= */
+
+.applicationCta {
+  display: grid;
+  grid-template-columns: auto 1px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 32px;
+  padding: 30px 34px;
+  border-radius: 17px;
+  background: #0137a2;
+  color: #ffffff;
+}
+
+.applicationTitle {
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(1.45rem, 2vw, 2rem);
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  white-space: nowrap;
+}
+
+.applicationDivider {
+  width: 1px;
+  height: 42px;
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.applicationText {
+  max-width: 610px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+.applicationButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-height: 48px;
+  padding: 0 21px;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #0137a2;
+  font-size: 0.86rem;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+  transition:
+    transform 180ms ease,
+    background-color 180ms ease;
+}
+
+.applicationButton:hover {
+  transform: translateY(-2px);
+  background: #f2f5ff;
+}
+
+.applicationButton:focus-visible {
+  outline: 3px solid rgba(255, 255, 255, 0.5);
+  outline-offset: 4px;
+}
+
+/* =========================================
+   Responsive layout
+========================================= */
+
+@media (max-width: 1150px) {
+  .heroGrid {
+    gap: 38px;
+  }
+
+  .valuesGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .benefitsLayout {
+    grid-template-columns: 1fr;
+    gap: 38px;
+  }
+
+  .benefitsTitle {
+    max-width: 650px;
+  }
+
+  .applicationCta {
+    grid-template-columns: 1fr auto;
+  }
+
+  .applicationDivider {
+    display: none;
+  }
+
+  .applicationText {
+    grid-column: 1;
+  }
+
+  .applicationButton {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+  }
+}
+
+@media (max-width: 950px) {
+  .heroGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .heroContent {
+    max-width: 760px;
+  }
+
+  .teamGallery {
+    min-height: 300px;
+  }
+
+  .teamImage {
+    min-height: 300px;
+  }
+
+  .rolesHeader {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .rolesGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .processGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .processStep:nth-child(2)::after {
+    display: none;
+  }
+}
+
+@media (max-width: 760px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .hero {
+    padding: 72px 0 42px;
+  }
+
+  .heroTitle {
+    font-size: clamp(3rem, 14vw, 4.5rem);
+  }
+
+  .teamGallery {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .teamImage {
+    min-height: 260px;
+  }
+
+  .teamImage:nth-child(2) {
+    transform: none;
+  }
+
+  .teamImage:nth-child(3) {
+    display: none;
+  }
+
+  .valuesSection {
+    padding-bottom: 58px;
+  }
+
+  .valuesHeader {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .benefitsSection {
+    padding: 58px 0;
+  }
+
+  .benefitsGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .rolesSection {
+    padding-top: 64px;
+  }
+
+  .roleFilters {
+    flex-wrap: nowrap;
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 7px;
+    scrollbar-width: none;
+  }
+
+  .roleFilters::-webkit-scrollbar {
+    display: none;
+  }
+
+  .processGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .processStep:not(:last-child)::after {
+    top: auto;
+    right: 24px;
+    bottom: 0;
+    left: 24px;
+    width: auto;
+    height: 1px;
+  }
+
+  .applicationCta {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 28px 24px;
+  }
+
+  .applicationTitle {
+    white-space: normal;
+  }
+
+  .applicationButton {
+    grid-column: 1;
+    grid-row: auto;
+    width: fit-content;
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 560px) {
+  .heroActions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .primaryButton,
+  .secondaryButton {
+    width: 100%;
+  }
+
+  .teamGallery {
+    grid-template-columns: 1fr;
+  }
+
+  .teamImage {
+    min-height: 300px;
+  }
+
+  .teamImage:nth-child(2),
+  .teamImage:nth-child(3) {
+    display: none;
+  }
+
+  .valuesGrid,
+  .benefitsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .roleCard {
+    grid-template-columns: 1fr auto;
+  }
+
+  .roleMeta {
+    display: none;
+  }
+
+  .applicationButton {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .primaryButton,
+  .secondaryButton,
+  .galleryImage,
+  .valueCard,
+  .benefitCard,
+  .roleFilter,
+  .roleCard,
+  .roleArrow,
+  .applicationButton {
+    transition: none;
+  }
+}

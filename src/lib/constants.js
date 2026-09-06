@@ -112,7 +112,7 @@ export const megaMenus = {
       href: "/resources/app-dev-ebook",
     },
   },
-  about: {
+  industries: {
     columns: [
       {
         title: "HOW WE WORK",

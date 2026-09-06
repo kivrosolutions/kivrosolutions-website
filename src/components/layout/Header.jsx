@@ -19,10 +19,10 @@ const MegaMenuContext = createContext({
 
 const navLinks = [
   { href: "/", label: "Home", isHome: true },
-  { href: "/about", label: "About", hasMegaMenu: true, megaMenuKey: "about" },
+  { href: "/industries", label: "Industries", hasMegaMenu: true, megaMenuKey: "industries" },
   { href: "/services", label: "Services", hasMegaMenu: true, megaMenuKey: "services" },
-  { href: "/portfolio", label: "Portfolio" },
-  { href: "/blog", label: "Blog" },
+  { href: "/career", label: "Career" },
+  { href: "/about", label: "About" },
 ];
 
 function DesktopNavItem({ link, pathname }) {
