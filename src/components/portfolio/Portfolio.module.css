@@ -547,3 +547,41 @@
     transition: none;
   }
 }
+
+
+/* Clickable case-study cards */
+.projectCardLink {
+  display: block;
+  height: 100%;
+  color: inherit;
+  text-decoration: none;
+  border-radius: 16px;
+}
+
+.projectCardLink:focus-visible {
+  outline: 3px solid rgba(1, 55, 162, 0.3);
+  outline-offset: 4px;
+}
+
+.projectTitleRow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.projectArrow {
+  flex: 0 0 auto;
+  color: #0137a2;
+  transition: transform 180ms ease;
+}
+
+.projectCardLink:hover .projectArrow {
+  transform: translate(2px, -2px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .projectArrow {
+    transition: none;
+  }
+}
