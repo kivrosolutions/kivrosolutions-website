@@ -3,6 +3,7 @@ import Hero from "@/components/sections/Hero";
 import Services from "@/components/sections/Services";
 import Portfolio from "@/components/sections/Portfolio";
 import ProjectTimeline from "@/components/ui/ProjectTimeline";
+import WhyUsSection from "@/components/specificservice/WhyUsSection";
 import StatCard from "@/components/ui/StatCard";
 import PortfolioCard from "@/components/ui/PortfolioCard";
 import ProjectCard from "@/components/ui/ProjectCard";
@@ -13,10 +14,10 @@ import { defaultTimeline } from "@/lib/timelineData";
 import { withBasePath } from "@/lib/paths";
 
 const stats = [
-  { accent: "orange", value: "$1B+", label: "Raised By Client Startups", icon: DollarSign },
+  { accent: "orange", value: "$197+", label: "Raised By Client Startups", icon: DollarSign },
   { accent: "green", value: "150+", label: "Projects Delivered", icon: Rocket },
-  { accent: "blue", value: "50+", label: "Senior Engineers", icon: Users },
-  { accent: "purple", value: "12+", label: "Years In Business", icon: Award },
+  { accent: "blue", value: "25+", label: "Senior Engineers", icon: Users },
+  { accent: "purple", value: "6.5+", label: "Years In Business", icon: Award },
 ];
 
 export const metadata = {
@@ -61,6 +62,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Why Us Section */}
+      <WhyUsSection />
 
       {/* Portfolio Section */}
       <section className="bg-[#f6f7fb]">

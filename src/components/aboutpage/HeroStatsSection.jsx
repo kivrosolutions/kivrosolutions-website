@@ -55,7 +55,7 @@ const AnimatedCounter = ({ end, prefix = "", suffix = "", duration = 2000 }) => 
 
 export default function HeroStatsSection() {
   const stats = [
-    { value: 1, prefix: "$", suffix: "M+", label: "Client Work Delivered" },
+    { value: 197, prefix: "$", suffix: "+", label: "Client Work Delivered" },
     { value: 100, prefix: "", suffix: "%", label: "Job Success Score" },
     { value: 3, prefix: "", suffix: "", label: "Companies Run on Our AI" },
     { value: 8, prefix: "", suffix: "+", label: "Years Shipping Software" },
@@ -71,7 +71,7 @@ export default function HeroStatsSection() {
 
         {/* Paragraph */}
         <p className="mt-6 max-w-xl text-base leading-relaxed text-zinc-600 sm:text-lg mb-16">
-          Kivro Solution is a product engineering firm focused on AI integration.
+          KivroSolutions is a product engineering firm focused on AI integration.
           We embed an AI engineer with your team, find exactly where AI pays for
           itself, and build the AI employees that carry the work. We ran the
           method on our own companies before we ever sold it.

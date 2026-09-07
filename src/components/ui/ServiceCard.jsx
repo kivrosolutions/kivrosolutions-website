@@ -62,7 +62,7 @@ export default function ServiceCard({
 
   return (
     <article
-      className={`group relative w-full cursor-pointer overflow-hidden rounded-2xl p-4 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_16px_35px_-12px_rgba(0,0,0,0.22)] sm:p-5 ${t.surface}`}
+      className={`group relative w-full cursor-pointer overflow-hidden rounded-2xl border border-[#0137a2]/25 p-4 transition-all duration-300 ease-out hover:-translate-y-1 hover:border-transparent hover:shadow-[0_16px_35px_-12px_rgba(0,0,0,0.22)] sm:p-5 ${t.surface}`}
     >
       {/* Top row: badge + icon */}
       <div className="flex items-start justify-between gap-3">

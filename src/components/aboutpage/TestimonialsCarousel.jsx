@@ -7,59 +7,59 @@ export default function TestimonialsCarousel() {
 
   const testimonials = [
     {
-      logo: "Elevated",
+      logo: "Nimbus",
       logoColor: "#0b1b3f",
-      stat: "35%",
-      statLabel: "Increase in qualified leads",
+      stat: "42%",
+      statLabel: "Reduction in page load time",
       quote:
-        "\"Big thanks to the whole team. The entire team was a pleasure to work with and the deliverables were top notch. I would recommend this team to anyone looking for the best.\"",
-      author: "Stephen Reddy",
-      role: "CEO, Elevated",
-      screenshot: "/screenshots/elevated.png",
+        '"They rebuilt our platform from scratch and it shows. Faster, cleaner, and our devs actually enjoy working in the codebase now."',
+      author: "Farah Khalid",
+      role: "CTO, Nimbus",
+      screenshot: "/screenshots/nimbus.png",
     },
     {
-      logo: "moon monster",
+      logo: "Cartwheel",
       logoColor: "#0b1b3f",
-      stat: "80%",
-      statLabel: "Increase in demo bookings",
+      stat: "3x",
+      statLabel: "Faster feature deployment",
       quote:
-        "\"Kivro transformed our online presence. We went from a confusing website to one that clearly communicates our value. Highly recommended.\"",
-      author: "Mike Morgan",
-      role: "Marketing Director, Moon Monster",
-      screenshot: "/screenshots/moonmonster.png",
+        '"We went from monthly releases to weekly ones. The team didn\'t just write code, they fixed how we ship."',
+      author: "Daniel Osei",
+      role: "Head of Product, Cartwheel",
+      screenshot: "/screenshots/cartwheel.png",
     },
     {
-      logo: "247",
+      logo: "Northline Retail",
+      logoColor: "#0b1b3f",
+      stat: "28%",
+      statLabel: "Increase in checkout conversion",
+      quote:
+        '"Small UX changes, huge revenue impact. They found friction points we didn\'t even know existed and fixed them fast."',
+      author: "Priya Malhotra",
+      role: "Founder, Northline Retail",
+      screenshot: "/screenshots/northline.png",
+    },
+    {
+      logo: "Verano Health",
       logoColor: "#0b1b3f",
       stat: "60%",
-      statLabel: "Increase in outbound replies",
+      statLabel: "Drop in support ticket volume",
       quote:
-        "\"Thanks for all the support on this partnership. Kivro is an awesome team to work with.\"",
-      author: "David Mueller",
-      role: "VP of Marketing, 247",
-      screenshot: "/screenshots/247.png",
+        '"The AI-powered helpdesk they built handles most of our routine queries now. Our support team finally has room to breathe."',
+      author: "Marcus Webb",
+      role: "Operations Director, Verano Health",
+      screenshot: "/screenshots/verano.png",
     },
     {
-      logo: "TechFlow",
+      logo: "Fieldstone Logistics",
       logoColor: "#0b1b3f",
-      stat: "45%",
-      statLabel: "Increase in conversion rate",
+      stat: "15 hrs/week",
+      statLabel: "Saved through automation",
       quote:
-        "\"The team delivered beyond our expectations. Our new website not only looks amazing but also converts visitors into customers effectively.\"",
-      author: "Sarah Johnson",
-      role: "Founder, TechFlow",
-      screenshot: "/screenshots/techflow.png",
-    },
-    {
-      logo: "DataSync",
-      logoColor: "#0b1b3f",
-      stat: "90%",
-      statLabel: "Reduction in bounce rate",
-      quote:
-        "\"Working with Kivro was a game-changer. They understood our vision and executed it perfectly. The results speak for themselves.\"",
-      author: "James Wilson",
-      role: "CTO, DataSync",
-      screenshot: "/screenshots/datasync.png",
+        '"What used to be manual spreadsheet work is now automatic. It\'s rare to find a team that actually understands operations, not just code."',
+      author: "Layla Ahmadi",
+      role: "COO, Fieldstone Logistics",
+      screenshot: "/screenshots/fieldstone.png",
     },
   ];
 
@@ -312,12 +312,12 @@ export default function TestimonialsCarousel() {
               transition: "all 0.3s ease",
             }}
             onMouseEnter={(e) => {
-e.currentTarget.style.backgroundColor = "#0b1b3f";
-                e.currentTarget.style.borderColor = "#0b1b3f";
+              e.currentTarget.style.backgroundColor = "#0b1b3f";
+              e.currentTarget.style.borderColor = "#0b1b3f";
             }}
             onMouseLeave={(e) => {
-e.currentTarget.style.backgroundColor = "#0137a2";
-                e.currentTarget.style.borderColor = "#0137a2";
+              e.currentTarget.style.backgroundColor = "#0137a2";
+              e.currentTarget.style.borderColor = "#0137a2";
             }}
           >
             ←
@@ -340,12 +340,12 @@ e.currentTarget.style.backgroundColor = "#0137a2";
               transition: "all 0.3s ease",
             }}
             onMouseEnter={(e) => {
-e.currentTarget.style.backgroundColor = "#0b1b3f";
-                e.currentTarget.style.borderColor = "#0b1b3f";
+              e.currentTarget.style.backgroundColor = "#0b1b3f";
+              e.currentTarget.style.borderColor = "#0b1b3f";
             }}
             onMouseLeave={(e) => {
-e.currentTarget.style.backgroundColor = "#0137a2";
-                e.currentTarget.style.borderColor = "#0137a2";
+              e.currentTarget.style.backgroundColor = "#0137a2";
+              e.currentTarget.style.borderColor = "#0137a2";
             }}
           >
             →

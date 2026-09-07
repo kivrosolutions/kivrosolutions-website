@@ -9,32 +9,32 @@ export default function OurValuesSection() {
     {
       title: "Innovation",
       description:
-        "We keep pushing what AI can safely take over, from voice agents that answer at 2 AM to reports that compile themselves. Innovation for us isn't novelty. It's finding the next piece of work we can hand to a machine so a team gets its time back.",
+        "We chase what's technically possible before it becomes the industry standard — whether that's shipping an AI feature clients hadn't asked for yet or rebuilding a workflow that used to take five steps into one click. Innovation to us means shorter timelines and fewer manual tasks for the people who use what we build.",
     },
     {
       title: "Integrity",
       description:
-        "We believe in transparent communication and honest partnerships. Every project we take on is treated with the utmost professionalism, and we deliver on our promises. No hidden agendas, no overpromising—just reliable, ethical work that you can trust.",
+        "We quote real timelines, not sales-friendly ones, and we tell clients when an idea won't work before we take their budget for it. If a project needs three more weeks to be done right, we say three more weeks — not 'almost there.'",
     },
     {
       title: "Collaboration",
       description:
-        "Great results come from great teamwork. We embed ourselves with your team, learning your business inside out. We're not just vendors; we're partners who invest in your success and work alongside you to achieve breakthrough results.",
+        "The best solutions come from developers, designers, and clients arguing in the same room, not from one team guessing what another team meant. We loop clients into sprint reviews and decisions early, so nobody's surprised at launch.",
     },
     {
       title: "Excellence",
       description:
-        "Good enough isn't in our vocabulary. We obsess over every detail, from the first line of code to the final deployment. Our commitment to excellence means delivering solutions that not only meet but exceed your expectations, every single time.",
+        "We'd rather ship one feature that works flawlessly than five that mostly work. Every release goes through real testing — not just 'it works on my machine' — before it reaches a single user.",
     },
     {
       title: "Customer-Centricity",
       description:
-        "Your success is our success. We start every project by deeply understanding your challenges and goals. Every decision we make is guided by one question: How does this create value for our client? Your growth is the ultimate measure of our performance.",
+        "We build for the person who'll actually use the product, not for the person signing the invoice. That means asking 'will your customer understand this in three seconds?' before asking 'does this look impressive in a demo?'",
     },
     {
       title: "Adaptability",
       description:
-        "The business landscape changes fast, and so do we. We stay agile, continuously learning and evolving our approach to match your needs. Whether it's adopting new technologies or pivoting strategies, we're always ready to adapt and deliver.",
+        "Tech stacks change, client priorities shift mid-project, and requirements get rewritten after week two — that's normal, not a crisis. We build in a way that lets us pivot without throwing away three weeks of work.",
     },
   ];
 
