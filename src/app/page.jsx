@@ -8,7 +8,6 @@ import PortfolioCard from "@/components/ui/PortfolioCard";
 import ProjectCard from "@/components/ui/ProjectCard";
 import AboutShowcase from "@/components/ui/AboutShowcase";
 import Testimonials from "@/components/sections/Testimonials";
-import CTA from "@/components/sections/CTA";
 import { defaultTimeline } from "@/lib/timelineData";
 import { withBasePath } from "@/lib/paths";
 
@@ -123,8 +122,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      <CTA />
     </>
   );
 }
