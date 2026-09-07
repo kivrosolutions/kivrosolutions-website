@@ -1,14 +1,26 @@
 import { siteConfig } from "@/config/site";
+import { getAllProjects } from "@/lib/projectsData";
 
 export const dynamic = "force-static";
 
 export default function sitemap() {
-  const routes = ["", "/about", "/services", "/portfolio", "/contact", "/blog"];
+  const staticRoutes = [
+    "",
+    "/about",
+    "/services",
+    "/portfolio",
+    "/contact",
+    "/blog",
+  ];
 
-  return routes.map((route) => ({
-    url: `${siteConfig.url}${route}`,
+  const projectRoutes = getAllProjects().map(
+    (project) => "/portfolio/" + project.slug
+  );
+
+  return [...staticRoutes, ...projectRoutes].map((route) => ({
+    url: siteConfig.url + route,
     lastModified: new Date(),
     changeFrequency: "monthly",
-    priority: route === "" ? 1 : 0.8,
+    priority: route === "" ? 1 : route.startsWith("/portfolio/") ? 0.7 : 0.8,
   }));
 }
