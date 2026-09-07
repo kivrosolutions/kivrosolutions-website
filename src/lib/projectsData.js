@@ -120,6 +120,7 @@ const projects = [
     ],
   },
   {
+<<<<<<< HEAD
     slug: "fitness-ai-coach",
     title: "Fitness & Diet Tracking App with AI Coach",
     description: "AI-powered fitness and nutrition tracking mobile platform",
@@ -150,6 +151,38 @@ const projects = [
       { value: "1", label: "Unified fitness platform" },
       { value: "5+", label: "Core tracking features" },
       { value: "AI", label: "Personalized coaching" },
+=======
+    slug: "home-services-booking",
+    title: "On-Demand Home Services Booking App",
+    description: "Complete mobile ecosystem for booking home services",
+    summary: "A multi-sided mobile platform connecting customers with verified home-service professionals — from discovery and booking to real-time tracking, payment, and feedback.",
+    image: "/images/portfolio/home-services.webp",
+    imageAlt: "Home services booking mobile application",
+    tags: ["React Native", "Node.js", "Mobile App"],
+    categories: ["mobile"],
+    outcome: "End-to-end service booking automation",
+    client: "Confidential client",
+    industry: "Home Services",
+    services: ["React Native development", "Node.js backend", "PostgreSQL database", "Google Maps integration", "Firebase notifications", "Payment gateway"],
+    timeline: "Demo timeline",
+    year: "2026",
+    challenge: "Traditional home-service businesses relied on phone calls, WhatsApp, and spreadsheets — causing scheduling conflicts, poor booking visibility, and fragmented customer-provider communication.",
+    solution: "We built a complete on-demand ecosystem with customer and provider mobile apps plus an admin dashboard, covering service discovery, booking, real-time status tracking, digital payments, and ratings.",
+    features: [
+      "Customer booking journey",
+      "Service provider management",
+      "Real-time booking updates",
+      "Push notification system",
+      "Digital payment integration",
+      "Ratings and reviews",
+      "Admin dashboard",
+      "Google Maps location services",
+    ],
+    results: [
+      { value: "3", label: "Connected applications" },
+      { value: "24/7", label: "Booking availability" },
+      { value: "Real-Time", label: "Service tracking" },
+>>>>>>> origin/main
     ],
   },
 ];
