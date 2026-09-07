@@ -43,7 +43,7 @@ const footerLinkClass =
 
 export default function Footer() {
   return (
-    <footer className="relative overflow-hidden rounded-t-[2rem] bg-[#07142d] text-white sm:rounded-t-[2.5rem]">
+    <footer className="relative overflow-hidden bg-[#07142d] text-white">
       <div
         aria-hidden="true"
         className="pointer-events-none absolute -top-44 -left-44 h-96 w-96 rounded-full border border-blue-500/15"
