@@ -299,7 +299,7 @@ export default function ServicePageLayout({
       {beforeCta}
 
       {/* CTA Banner or Default CTA */}
-      {ctaBanner ? (
+      {/* {ctaBanner ? (
         <section className="bg-[#f6f7fb]">
           <CtaBanner {...ctaBanner} />
         </section>
@@ -320,7 +320,7 @@ export default function ServicePageLayout({
             </Link>
           </div>
         </section>
-      )}
+      )} */}
     </>
   );
 }

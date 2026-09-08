@@ -6,15 +6,15 @@ import styles from "./Careers.module.css";
 
 const teamImages = [
   {
-    src: "/images/careers/team-collaboration-1.webp",
+    src: "/images/careers/team-collaboration-1.jpeg",
     alt: "Kivro Solutions team members collaborating",
   },
   {
-    src: "/images/careers/team-collaboration-2.webp",
+    src: "/images/careers/team-collaboration-2.jpeg",
     alt: "Software team discussing a digital product",
   },
   {
-    src: "/images/careers/team-collaboration-3.webp",
+    src: "/images/careers/team-collaboration-3.jpeg",
     alt: "Kivro Solutions team working together",
   },
 ];

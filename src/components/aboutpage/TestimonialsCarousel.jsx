@@ -15,7 +15,7 @@ export default function TestimonialsCarousel() {
         '"They rebuilt our platform from scratch and it shows. Faster, cleaner, and our devs actually enjoy working in the codebase now."',
       author: "Farah Khalid",
       role: "CTO, Nimbus",
-      screenshot: "/screenshots/nimbus.png",
+      screenshot: "/images/Website_UI_mockup_design.jpeg",
     },
     {
       logo: "Cartwheel",
@@ -26,7 +26,7 @@ export default function TestimonialsCarousel() {
         '"We went from monthly releases to weekly ones. The team didn\'t just write code, they fixed how we ship."',
       author: "Daniel Osei",
       role: "Head of Product, Cartwheel",
-      screenshot: "/screenshots/cartwheel.png",
+      screenshot: "/images/SaaS_dashboard_website_UI_mockup.jpeg",
     },
     {
       logo: "Northline Retail",
@@ -37,7 +37,7 @@ export default function TestimonialsCarousel() {
         '"Small UX changes, huge revenue impact. They found friction points we didn\'t even know existed and fixed them fast."',
       author: "Priya Malhotra",
       role: "Founder, Northline Retail",
-      screenshot: "/screenshots/northline.png",
+      screenshot: "/images/E-commerce_website_UI_mockup.jpeg",
     },
     {
       logo: "Verano Health",
@@ -48,7 +48,7 @@ export default function TestimonialsCarousel() {
         '"The AI-powered helpdesk they built handles most of our routine queries now. Our support team finally has room to breathe."',
       author: "Marcus Webb",
       role: "Operations Director, Verano Health",
-      screenshot: "/screenshots/verano.png",
+      screenshot: "/images/Healthcare_website_UI_mockup.jpeg",
     },
     {
       logo: "Fieldstone Logistics",
@@ -59,7 +59,7 @@ export default function TestimonialsCarousel() {
         '"What used to be manual spreadsheet work is now automatic. It\'s rare to find a team that actually understands operations, not just code."',
       author: "Layla Ahmadi",
       role: "COO, Fieldstone Logistics",
-      screenshot: "/screenshots/fieldstone.png",
+      screenshot: "/images/Logistics_SaaS_dashboard_mockup_UI.jpeg",
     },
   ];
 
@@ -160,7 +160,7 @@ export default function TestimonialsCarousel() {
                       padding: "20px",
                       display: "flex",
                       alignItems: "center",
-                      justifyContent: "center",
+                      justifyContent: "flex-start",
                     }}
                   >
                     <img
@@ -170,6 +170,7 @@ export default function TestimonialsCarousel() {
                         width: "100%",
                         height: "100%",
                         objectFit: "cover",
+                        objectPosition: "right center",
                         borderRadius: "8px",
                       }}
                     />

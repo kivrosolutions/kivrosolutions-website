@@ -1,13 +1,31 @@
+import ContactHero from "@/components/contactpage/ContactHero";
+import ScrollingTestimonials from "@/components/contactpage/ScrollingTestimonials";
+import BeforeAfterComparison from "@/components/contactpage/BeforeAfterComparison";
+import PipelineResults from "@/components/contactpage/PipelineResults";
+import ChatGPTCTASection from "@/components/aboutpage/ChatGPTCTASection";
+
 export const metadata = {
   title: "Contact Us - Kivro Solution",
-  description: "Get in touch with us. Let's discuss your next project.",
+  description: "Get in touch with Kivro Solutions. Book a free strategy session and transform your business.",
 };
 
 export default function ContactPage() {
   return (
-    <section className="mx-auto max-w-7xl px-6 py-24">
-      <h1 className="text-4xl font-bold tracking-tight">Contact Us</h1>
-      <p className="mt-4 text-lg text-zinc-600">Content coming soon.</p>
-    </section>
+    <>
+      {/* Hero with Contact Form */}
+      <ContactHero />
+
+      {/* Scrolling Testimonials - 3 rows */}
+      <ScrollingTestimonials />
+
+      {/* Before/After Comparison */}
+      <BeforeAfterComparison />
+
+      {/* Pipeline Results - Horizontal Scroll */}
+      <PipelineResults />
+
+      {/* ChatGPT CTA (Already Built) */}
+      <ChatGPTCTASection />
+    </>
   );
 }

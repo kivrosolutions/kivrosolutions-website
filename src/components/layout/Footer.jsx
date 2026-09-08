@@ -98,7 +98,7 @@ export default function Footer() {
               >
                 <span className="relative block h-[116px] w-[250px] overflow-hidden sm:w-[280px]">
                   <Image
-                    src={withBasePath("/images/kivro-logo-white.jpg")}
+                    src={withBasePath("/images/kivro-logo-white.png")}
                     alt="Kivro Solutions"
                     fill
                     sizes="280px"

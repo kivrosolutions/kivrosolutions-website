@@ -21,7 +21,7 @@ const navLinks = [
   { href: "/", label: "Home", isHome: true },
   { href: "/industries", label: "Industries", hasMegaMenu: true, megaMenuKey: "industries" },
   { href: "/services", label: "Services", hasMegaMenu: true, megaMenuKey: "services" },
-  { href: "/career", label: "Career" },
+  { href: "/career", label: "Careers" },
   { href: "/about", label: "About" },
 ];
 

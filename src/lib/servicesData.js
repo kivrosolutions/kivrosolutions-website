@@ -1044,6 +1044,95 @@ export const services = [
         description: "Predictive models for user behavior, churn, and lifetime value.",
       },
     ],
+    statCards: [
+      { accent: "blue", value: "2.5x", label: "Faster time-to-value on growth initiatives", icon: "trending-up" },
+      { accent: "green", value: "45%", label: "Higher conversion on key funnels", icon: "smile" },
+      { accent: "orange", value: "100+", label: "Experiments shipped", icon: "award" },
+    ],
+    featureSection: {
+      label: "CAPABILITIES",
+      heading: "An AI-powered growth",
+      headingAccent: "engine for your product.",
+      description:
+        "We pair AI, analytics, and experimentation so every growth decision is evidence-based and compounding.",
+      cards: [
+        {
+          accent: "blue",
+          title: "Data-Driven Growth Strategy",
+          description:
+            "Acquisition, activation, and retention plans built on your actual metrics — not guesses.",
+          icon: "search",
+        },
+        {
+          accent: "green",
+          title: "A/B Testing & Experimentation",
+          description:
+            "Structured, rapid experiment cycles that systematically raise conversion at every step.",
+          icon: "trending-up",
+        },
+        {
+          accent: "orange",
+          title: "Analytics & Attribution Setup",
+          description:
+            "Event tracking, dashboards, and attribution that show exactly what drives your results.",
+          icon: "layout",
+        },
+        {
+          accent: "purple",
+          title: "AI-Powered Insights",
+          description:
+            "Predictive models for user behavior, churn, and lifetime value that steer your roadmap.",
+          icon: "cpu",
+        },
+      ],
+    },
+    processTimelineSteps: [
+      {
+        week: "Week 1",
+        title: "Audit & Baseline",
+        description:
+          "Deep audit of current metrics, funnels, and data. We identify growth levers and set clear success criteria.",
+        color: "#1d4ed8",
+        badgeBg: "#cfd9ec",
+      },
+      {
+        week: "Week 2–3",
+        title: "AI & Experiment Setup",
+        description:
+          "Tracking implementation, AI insight models, experiment backlog, and A/B test architecture.",
+        color: "#c2410c",
+        badgeBg: "#f4e0d6",
+      },
+      {
+        week: "Week 4–6",
+        title: "Run & Optimize",
+        description:
+          "Weekly experiment cycles. We double down on what works and cut what doesn't.",
+        color: "#15803d",
+        badgeBg: "#d9e7d6",
+      },
+      {
+        week: "Final Week",
+        title: "Scale & Sustain",
+        description:
+          "Performance reporting, scaling playbook, and systems for continuous compounding growth.",
+        color: "#0e7490",
+        badgeBg: "#cfe2e7",
+      },
+    ],
+    fitComparison: {
+      goodFit: [
+        "You have a product and want a systematic, data-driven growth engine",
+        "You're running experiments but can't tell what's actually moving the needle",
+        "You have the data to make decisions — you need the system to act on it",
+        "You want AI to surface insights, not more dashboards to ignore",
+      ],
+      notFit: [
+        "You don't have a product or baseline traffic yet — build and launch first",
+        "You want a quick short-term campaign, not a growth system",
+        "You expect instant results — compounding growth takes consistent sprints",
+      ],
+    },
     process: [
       {
         step: "01",
@@ -1077,39 +1166,128 @@ export const services = [
   },
   {
     slug: "marketing",
-    title: "App Marketing",
+    title: "Digital Marketing",
     category: "GROW",
     badgeColor: "blue",
     icon: "speaker",
-    description: "Targeted campaigns for installs, engagement, retention.",
+    description: "Full-funnel digital marketing that drives qualified growth.",
     longDescription:
-      "Full-funnel app marketing — from pre-launch buzz to post-install engagement. We drive the right users to your app and keep them coming back.",
+      "Data-driven digital marketing that connects your business with the right audience. From SEO to paid media to retention — we optimize every touchpoint of the customer journey.",
     heroImage: withBasePath("/images/services/marketing.jpg"),
     serviceHero: {
       theme: "blue",
-      badge: "Service · App Marketing",
-      title: "Marketing that drives real installs and engagement.",
-      accentTitle: "Full-funnel. Data-backed.",
+      badge: "Service · Digital Marketing",
+      title: "Marketing that turns clicks into customers.",
+      accentTitle: "Data-backed. Performance-led.",
       description:
-        "Full-funnel app marketing — from pre-launch buzz to post-install engagement. We drive the right users to your app and keep them coming back.",
-      primaryCta: { label: "See our work", href: "#work" },
+        "Full-funnel digital marketing — from SEO and paid media to retention. We optimize every step of the journey with data, not guesswork.",
+      primaryCta: { label: "See results", href: "#work" },
       secondaryCta: { label: "Talk to a strategist", href: "/contact" },
+    },
+    statCards: [
+      { accent: "blue", value: "3x", label: "Return on ad spend", icon: "trending-up" },
+      { accent: "green", value: "40%", label: "Lower acquisition cost", icon: "smile" },
+      { accent: "orange", value: "150+", label: "Campaigns delivered", icon: "award" },
+    ],
+    featureSection: {
+      label: "CAPABILITIES",
+      heading: "Digital marketing",
+      headingAccent: "that converts.",
+      description:
+        "From SEO to paid media to retention — we build full-funnel campaigns powered by data, not guesswork.",
+      cards: [
+        {
+          accent: "blue",
+          title: "SEO & Content Marketing",
+          description:
+            "Technical SEO, keyword strategy, and content that compounds organic growth over time.",
+          icon: "search",
+        },
+        {
+          accent: "green",
+          title: "Paid Advertising",
+          description:
+            "ROI-focused campaigns across Google, Meta, LinkedIn, and TikTok.",
+          icon: "trending-up",
+        },
+        {
+          accent: "orange",
+          title: "Conversion Rate Optimization",
+          description:
+            "A/B testing, landing page optimization, and heatmaps to turn traffic into revenue.",
+          icon: "layout",
+        },
+        {
+          accent: "purple",
+          title: "Analytics & Attribution",
+          description:
+            "Event tracking, dashboards, and multi-touch attribution that inform real decisions.",
+          icon: "cpu",
+        },
+      ],
+    },
+    processTimelineSteps: [
+      {
+        week: "Week 1",
+        title: "Audit & Strategy",
+        description:
+          "Full audit of your digital presence, competitors, and channels. We set targets and pick the highest-ROI levers.",
+        color: "#1d4ed8",
+        badgeBg: "#cfd9ec",
+      },
+      {
+        week: "Week 2–3",
+        title: "Channel Setup",
+        description:
+          "Campaign architecture, creative development, tracking implementation, and audience targeting.",
+        color: "#c2410c",
+        badgeBg: "#f4e0d6",
+      },
+      {
+        week: "Week 4–6",
+        title: "Launch & Optimize",
+        description:
+          "Campaign launch with daily monitoring and A/B testing for maximum ROI.",
+        color: "#15803d",
+        badgeBg: "#d9e7d6",
+      },
+      {
+        week: "Final Week",
+        title: "Report & Scale",
+        description:
+          "Performance reporting, insights documentation, and a scaling playbook for sustained growth.",
+        color: "#0e7490",
+        badgeBg: "#cfe2e7",
+      },
+    ],
+    fitComparison: {
+      goodFit: [
+        "You have a website or product but traffic isn't converting",
+        "You're spending on ads but can't measure what's actually working",
+        "You want data-driven decisions, not guesswork",
+        "You need both acquisition and retention strategies",
+      ],
+      notFit: [
+        "You don't have a website or product yet — build first, market second",
+        "Budget is too low to test multiple channels effectively",
+        "You expect overnight results — sustainable growth takes sprints",
+      ],
     },
     features: [
       {
-        title: "ASO",
-        description: "App Store optimization for maximum organic discovery and conversion.",
+        title: "SEO & Content",
+        description: "Technical SEO, keyword strategy, and content that compounds organic growth.",
       },
       {
-        title: "Paid Acquisition",
-        description: "ROI-focused campaigns across Meta, Google, TikTok, and Apple Search Ads.",
+        title: "Paid Advertising",
+        description: "ROI-focused campaigns across Google, Meta, LinkedIn, and TikTok.",
       },
       {
-        title: "Retention Campaigns",
-        description: "Push, email, and in-app messaging that drives engagement.",
+        title: "Conversion Optimization",
+        description: "A/B testing and landing page optimization to maximize conversions.",
       },
       {
-        title: "Attribution",
+        title: "Analytics & Attribution",
         description: "Multi-touch attribution to understand what's really driving results.",
       },
     ],
@@ -1128,15 +1306,18 @@ export const services = [
       },
     ],
     meta: {
-      title: "App Marketing Services - Kivro Solution",
+      title: "Digital Marketing Services - Kivro Solution",
       description:
-        "Full-funnel app marketing — ASO, paid acquisition, retention campaigns, and attribution. Drive installs and engagement.",
+        "Full-funnel digital marketing — SEO, paid advertising, CRO, and analytics. Data-backed campaigns that drive growth.",
       keywords: [
-        "app marketing",
-        "ASO",
-        "app store optimization",
-        "mobile marketing",
-        "user acquisition",
+        "digital marketing",
+        "SEO",
+        "paid advertising",
+        "PPC",
+        "content marketing",
+        "CRO",
+        "conversion optimization",
+        "analytics",
       ],
     },
   },
