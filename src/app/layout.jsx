@@ -23,6 +23,11 @@ export const metadata = {
   title: "Kivro Solution - Software Agency",
   description:
     "We build innovative software solutions. Strategy, design, and engineering from our senior team.",
+  icons: {
+    icon: "/images/faviicon.png",
+    shortcut: "/images/faviicon.png",
+    apple: "/images/faviicon.png",
+  },
 };
 
 export default function RootLayout({ children }) {
