@@ -9,6 +9,7 @@ import PortfolioCard from "@/components/ui/PortfolioCard";
 import ProjectCard from "@/components/ui/ProjectCard";
 import AboutShowcase from "@/components/ui/AboutShowcase";
 import Testimonials from "@/components/sections/Testimonials";
+import ChatGPTCTASection from "@/components/aboutpage/ChatGPTCTASection";
 import { defaultTimeline } from "@/lib/timelineData";
 import { withBasePath } from "@/lib/paths";
 
@@ -66,7 +67,7 @@ export default function Home() {
       <WhyUsSection />
 
       {/* Portfolio Section */}
-      <section className="bg-[#f6f7fb]">
+      {/* <section className="bg-[#f6f7fb]">
         <div className="container-custom pt-10 pb-24">
           <p className="text-sm font-semibold tracking-widest text-zinc-500 uppercase">Portfolio</p>
           <h2 className="mt-4 text-3xl font-bold tracking-tight text-zinc-900 sm:text-4xl">
@@ -125,7 +126,9 @@ export default function Home() {
             />
           </div>
         </div>
-      </section>
+      </section> */}
+      <Testimonials />
+      <ChatGPTCTASection />
     </>
   );
 }

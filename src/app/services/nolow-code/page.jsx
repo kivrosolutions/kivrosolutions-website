@@ -28,6 +28,8 @@ export default function NoLowCodePage() {
         statCards={service.statCards}
         featureSection={service.featureSection}
         processTimeline={service.processTimelineSteps}
+        orbitSphereItems={service.orbitSphereItems}
+        orbitSphereSatellites={service.orbitSphereSatellites}
       />
       {service.fitComparison && (
         <FitComparisonSection

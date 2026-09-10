@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowUpRight, Mail, MapPin } from "lucide-react";
-import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa6";
+import { ArrowUpRight, Mail, MapPin, Phone } from "lucide-react";
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaWhatsapp } from "react-icons/fa6";
 import { siteConfig } from "@/config/site";
 import { withBasePath } from "@/lib/paths";
 
@@ -35,6 +35,11 @@ const socialLinks = [
     href: "https://www.facebook.com/kivrosolutions/",
     label: "Kivro Solutions on Facebook",
     icon: FaFacebookF,
+  },
+  {
+    href: "https://wa.me/923188337822", // 👈 Yahan apna actual WhatsApp number dalen (e.g., 923001234567)
+    label: "Contact us on WhatsApp",
+    icon: FaWhatsapp,
   },
 ];
 
@@ -90,6 +95,7 @@ export default function Footer() {
 
         <div className="border-t border-blue-300/25 py-12 sm:py-14 lg:py-16">
           <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-[1.45fr_0.75fr_1fr_1.15fr] lg:gap-10">
+            {/* Logo & Description */}
             <div>
               <Link
                 href="/"
@@ -111,14 +117,46 @@ export default function Footer() {
               </p>
             </div>
 
+            {/* Links Columns */}
             <FooterLinkColumn title="Company" links={footerLinks.company} />
             <FooterLinkColumn title="Services" links={footerLinks.services} />
 
+            {/* Contact & Social Section */}
             <div>
               <h3 className="text-xs font-semibold tracking-[0.2em] text-blue-300 uppercase">
                 Let&apos;s connect
               </h3>
-              <div className="mt-6 flex flex-col gap-4">
+              <div className="mt-6 flex flex-col gap-5">
+                
+                {/* Pakistan Number */}
+                <a
+                  href="tel:+923188337822" // 👈 Yahan apna actual PK number dalen
+                  className={`${footerLinkClass} flex items-start gap-3 group`}
+                >
+                  <Phone aria-hidden="true" className="h-5 w-5 shrink-0 text-blue-300 mt-0.5" />
+                  <span className="flex flex-col">
+                    <span className="text-[11px] font-semibold tracking-wide text-blue-300/70 uppercase">
+                      Pakistan
+                    </span>
+                    <span className="text-[15px] group-hover:text-white">+92 318 8337822</span>
+                  </span>
+                </a>
+
+                {/* UK Number */}
+                <a
+                  href="tel:+447723341487" // 👈 Yahan apna actual UK number dalen
+                  className={`${footerLinkClass} flex items-start gap-3 group`}
+                >
+                  <Phone aria-hidden="true" className="h-5 w-5 shrink-0 text-blue-300 mt-0.5" />
+                  <span className="flex flex-col">
+                    <span className="text-[11px] font-semibold tracking-wide text-blue-300/70 uppercase">
+                      United Kingdom
+                    </span>
+                    <span className="text-[15px] group-hover:text-white">+44 7723 341487</span>
+                  </span>
+                </a>
+
+                {/* Email */}
                 <a
                   href="mailto:info@kivrosolutions.com"
                   className={`${footerLinkClass} flex items-center gap-3`}
@@ -126,12 +164,16 @@ export default function Footer() {
                   <Mail aria-hidden="true" className="h-5 w-5 shrink-0 text-blue-300" />
                   info@kivrosolutions.com
                 </a>
-                <p className="flex items-center gap-3 text-[15px] text-slate-300">
-                  <MapPin aria-hidden="true" className="h-5 w-5 shrink-0 text-blue-300" />
-                  Faisalabad, Pakistan
+
+                {/* Address */}
+                <p className="flex items-start gap-3 text-[15px] text-slate-300">
+                  <MapPin aria-hidden="true" className="h-5 w-5 shrink-0 text-blue-300 mt-0.5" />
+                  <span>Faisalabad, Pakistan</span>
                 </p>
               </div>
-              <div className="mt-7 flex gap-3">
+
+              {/* Social Links */}
+              <div className="mt-8 flex gap-3">
                 {socialLinks.map(({ href, label, icon: Icon }) => (
                   <a
                     key={label}
@@ -149,15 +191,16 @@ export default function Footer() {
           </div>
         </div>
 
+        {/* Bottom Bar */}
         <div className="flex flex-col gap-5 border-t border-blue-300/25 py-7 text-xs text-slate-400 sm:flex-row sm:items-center sm:justify-between">
           <p>
             &copy; {new Date().getFullYear()} {siteConfig.name}. All rights reserved.
           </p>
           <div className="flex flex-wrap items-center gap-x-6 gap-y-3">
-            <Link href="#" className="transition-colors hover:text-white">
+            <Link href="/privacy" className="transition-colors hover:text-white">
               Privacy Policy
             </Link>
-            <Link href="#" className="transition-colors hover:text-white">
+            <Link href="/terms" className="transition-colors hover:text-white">
               Terms of Service
             </Link>
             <span className="inline-flex items-center gap-2 text-slate-300">

@@ -14,6 +14,9 @@ import {
   Eye,
   Smile,
   Award,
+  Mail,
+  RefreshCw,
+  Rocket,
 } from "lucide-react";
 import ProcessTimeline from "@/components/specificservice/ProcessTimeline";
 import OrbitSphere from "@/components/specificservice/OrbitSphere";
@@ -36,6 +39,7 @@ const iconMap = {
   search: Search,
   "trending-up": TrendingUp,
   speaker: Volume2,
+  rocket: Rocket,
 };
 
 const badgeStyles = {
@@ -57,6 +61,9 @@ const featureCardIconMap = {
   cpu: Cpu,
   "trending-up": TrendingUp,
   speaker: Volume2,
+  mail: Mail,
+  "refresh-cw": RefreshCw,
+  rocket: Rocket,
 };
 
 const statIconMap = {
@@ -80,6 +87,7 @@ export default function ServicePageLayout({
   service,
   processTimeline,
   orbitSphereItems,
+  orbitSphereSatellites,
   serviceHero,
   ctaBanner,
   featureSection,
@@ -155,7 +163,11 @@ export default function ServicePageLayout({
       {orbitSphereItems && (
         <section className="bg-[#f6f7fb] px-4 py-20">
           <div className="mx-auto h-[380px] max-w-4xl sm:h-[500px]">
-            <OrbitSphere items={orbitSphereItems} className="h-full w-full" />
+            <OrbitSphere
+              items={orbitSphereItems}
+              satellites={orbitSphereSatellites}
+              className="h-full w-full"
+            />
           </div>
         </section>
       )}

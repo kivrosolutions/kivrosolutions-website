@@ -253,6 +253,20 @@ export const services = [
       primaryLight: "#5b8cff",
       badgeClass: "bg-[#15803d]",
     },
+    techStack: [
+      { name: "Figma", icon: "SiFigma" },
+      { name: "Sketch", icon: "SiSketch" },
+      { name: "Framer", icon: "SiFramer" },
+      { name: "Notion", icon: "SiNotion" },
+      { name: "Miro", icon: "SiMiro" },
+      { name: "Storybook", icon: "SiStorybook" },
+      { name: "LottieFiles", icon: "SiLottiefiles" },
+      { name: "Chromatic", icon: "SiChromatic" },
+      { name: "Maze", icon: "SiMaze" },
+      { name: "Hotjar", icon: "SiHotjar" },
+      { name: "Dribbble", icon: "SiDribbble" },
+      { name: "Behance", icon: "SiBehance" },
+    ],
     meta: {
       title: "UX/UI Design Services - Kivro Solution",
       description:
@@ -351,6 +365,26 @@ export const services = [
         },
       ],
     },
+    orbitSphereItems: [
+      "IOS",
+      "ANDROID",
+      "FLUTTER",
+      "SWIFT",
+      "KOTLIN",
+      "REACT NATIVE",
+      "FIREBASE",
+      "PUSH NOTIFICATIONS",
+      "OFFLINE MODE",
+      "APP STORE",
+      "PLAY STORE",
+      "PERFORMANCE",
+    ],
+    orbitSphereSatellites: [
+      { side: "left", top: "14%", value: "150+", label: "Apps shipped" },
+      { side: "left", top: "60%", value: "4.8★", label: "App Store rating" },
+      { side: "right", top: "22%", value: "99.9%", label: "Uptime SLA" },
+      { side: "right", top: "68%", value: "iOS + Android", label: "From one build" },
+    ],
     processTimelineSteps: [
       {
         week: "Week 1",
@@ -605,6 +639,26 @@ export const services = [
         },
       ],
     },
+    orbitSphereItems: [
+      "REACT",
+      "NEXT.JS",
+      "TYPESCRIPT",
+      "NODE.JS",
+      "APIS",
+      "DATABASES",
+      "AUTH",
+      "PAYMENTS",
+      "SEO",
+      "PERFORMANCE",
+      "SCALABILITY",
+      "DEPLOYMENT",
+    ],
+    orbitSphereSatellites: [
+      { side: "left", top: "14%", value: "200+", label: "Websites delivered" },
+      { side: "left", top: "60%", value: "<2s", label: "Avg. load time" },
+      { side: "right", top: "22%", value: "98%", label: "Core Web Vitals" },
+      { side: "right", top: "68%", value: "24/7", label: "Uptime SLA" },
+    ],
     techStack: [
       { name: "React", icon: "SiReact" },
       { name: "Next.js", icon: "SiNextdotjs" },
@@ -748,7 +802,7 @@ export const services = [
     category: "INTELLIGENCE",
     badgeColor: "green",
     icon: "code",
-    description: "Smarter, faster, more responsive AI.",
+    description: "Build products that think for themselves.",
     longDescription:
       "We build AI-native applications that learn, adapt, and deliver intelligent experiences from day one. Not AI as a feature — AI as the foundation.",
     heroImage: withBasePath("/images/services/ai-native.jpg"),
@@ -758,47 +812,132 @@ export const services = [
       title: "Build products that think for themselves.",
       accentTitle: "AI-first. Not AI-added.",
       description:
-        "We build AI-native applications that learn, adapt, and deliver intelligent experiences from day one. Not AI as a feature — AI as the foundation.",
+        "From LLM integration to custom RAG pipelines — we embed intelligence directly into your product so it learns, reasons, and evolves with every interaction.",
       primaryCta: { label: "See our approach", href: "#work" },
       secondaryCta: { label: "Talk to an engineer", href: "/contact" },
     },
-    features: [
+    statCards: [
+      { accent: "green", value: "3×", label: "Faster Time-to-Market", icon: "trending-up" },
+      { accent: "blue", value: "90%", label: "Reduction in Manual Logic", icon: "cpu" },
+      { accent: "orange", value: "50+", label: "AI Features Shipped", icon: "award" },
+    ],
+    featureSection: {
+      label: "CAPABILITIES",
+      heading: "Intelligence built in,",
+      headingAccent: "not bolted on.",
+      description:
+        "From LLM integration to fine-tuned models — we build the AI layer that makes your product genuinely smart.",
+      cards: [
+        {
+          accent: "green",
+          title: "LLM Integration",
+          description:
+            "GPT, Claude, Llama, and custom models woven into your product workflows with streaming, caching, and guardrails.",
+          icon: "cpu",
+        },
+        {
+          accent: "blue",
+          title: "RAG Pipelines",
+          description:
+            "Retrieval-augmented generation that grounds AI responses in your actual data — accurate, cited, and hallucination-free.",
+          icon: "search",
+        },
+        {
+          accent: "orange",
+          title: "Fine-Tuning & Training",
+          description:
+            "Custom model training on your domain data so the AI speaks your language and understands your business.",
+          icon: "trending-up",
+        },
+        {
+          accent: "purple",
+          title: "AI UX Design",
+          description:
+            "Interfaces purpose-built for human-AI interaction — streaming responses, confidence indicators, and graceful fallbacks.",
+          icon: "pencil",
+        },
+        {
+          accent: "green",
+          title: "Agent Orchestration",
+          description:
+            "Multi-step AI agents that plan, reason, use tools, and execute complex tasks autonomously.",
+          icon: "bot",
+        },
+        {
+          accent: "blue",
+          title: "Evaluation & Monitoring",
+          description:
+            "Continuous model evaluation, drift detection, and performance dashboards to keep AI quality high in production.",
+          icon: "eye",
+        },
+      ],
+    },
+    processTimelineSteps: [
       {
-        title: "LLM Integration",
-        description: "GPT, Claude, and custom models integrated into your product workflows.",
+        week: "Week 1",
+        title: "Discovery & Scoping",
+        description:
+          "Deep-dive into your product, data landscape, and user workflows to identify high-impact AI opportunities.",
+        color: "#15803d",
+        badgeBg: "#d9e7d6",
       },
       {
-        title: "RAG Pipelines",
-        description: "Retrieval-augmented generation for accurate, context-aware AI responses.",
+        week: "Week 2–3",
+        title: "AI Prototype",
+        description:
+          "Rapid proof-of-concept with the right model, data pipeline, and prompt architecture — measurable results before committing.",
+        color: "#0e7490",
+        badgeBg: "#cfe2e7",
       },
       {
-        title: "Fine-Tuning",
-        description: "Custom model training on your domain-specific data.",
+        week: "Week 4–5",
+        title: "Production Build",
+        description:
+          "Full implementation with streaming, error handling, rate limiting, evaluation suites, and observability baked in.",
+        color: "#c2410c",
+        badgeBg: "#f4e0d6",
       },
       {
-        title: "AI UX",
-        description: "Interfaces designed for human-AI interaction patterns.",
+        week: "Final Week",
+        title: "Launch & Evolve",
+        description:
+          "Production deployment with monitoring dashboards, user feedback loops, and continuous model improvement cycles.",
+        color: "#1d4ed8",
+        badgeBg: "#cfd9ec",
       },
     ],
-    process: [
-      {
-        step: "01",
-        title: "Explore",
-        description: "Identifying AI opportunities in your product.",
-      },
-      {
-        step: "02",
-        title: "Prototype",
-        description: "Rapid AI proof-of-concepts with measurable outcomes.",
-      },
-      { step: "03", title: "Build", description: "Production-grade AI features with monitoring." },
-      { step: "04", title: "Evolve", description: "Continuous learning and model improvement." },
+    fitComparison: {
+      goodFit: [
+        "You want AI deeply embedded in your product — not just a chatbot widget",
+        "Your product needs to understand context, reason over data, or generate content",
+        "You have proprietary data that gives your product a unique intelligence advantage",
+        "You're building a new product and want AI-native architecture from day one",
+      ],
+      notFit: [
+        "You just need a simple FAQ chatbot — that's AI Automation, not AI-Native",
+        "Your product doesn't have data-rich workflows that benefit from AI reasoning",
+        "You need it live this week — quality AI architecture takes proper sprints",
+      ],
+    },
+    techStack: [
+      { name: "Anthropic", icon: "SiAnthropic" },
+      { name: "LangChain", icon: "SiLangchain" },
+      { name: "LangGraph", icon: "SiLanggraph" },
+      { name: "Google Gemini", icon: "SiGooglegemini" },
+      { name: "Mistral", icon: "SiMistralai" },
+      { name: "Ollama", icon: "SiOllama" },
+      { name: "Hugging Face", icon: "SiHuggingface" },
+      { name: "Qdrant", icon: "SiQdrant" },
+      { name: "Dify", icon: "SiDify" },
+      { name: "PyTorch", icon: "SiPytorch" },
+      { name: "TensorFlow", icon: "SiTensorflow" },
+      { name: "Weights & Biases", icon: "SiWeightsandbiases" },
     ],
     meta: {
       title: "AI-Native Development - Kivro Solution",
       description:
-        "AI-native application development. LLM integration, RAG pipelines, and intelligent features built into your product.",
-      keywords: ["AI development", "LLM integration", "RAG", "AI-native apps", "machine learning"],
+        "AI-native application development. LLM integration, RAG pipelines, fine-tuning, and intelligent features built into your product from day one.",
+      keywords: ["AI development", "LLM integration", "RAG pipelines", "AI-native apps", "fine-tuning", "machine learning"],
     },
   },
   {
@@ -807,7 +946,7 @@ export const services = [
     category: "INTELLIGENCE",
     badgeColor: "green",
     icon: "bot",
-    description: "Agents that automate tasks and coordinate workflows.",
+    description: "Agents that work while you sleep.",
     longDescription:
       "Autonomous AI agents that handle complex, multi-step tasks — coordinating across tools, systems, and data sources without human intervention.",
     heroImage: withBasePath("/images/services/ai-agents.jpg"),
@@ -817,49 +956,126 @@ export const services = [
       title: "Agents that work while you sleep.",
       accentTitle: "Autonomous. Observable. Safe.",
       description:
-        "Autonomous AI agents that handle complex, multi-step tasks — coordinating across tools, systems, and data sources without human intervention.",
+        "From customer support to operations — we build AI agents that plan, reason, use tools, and execute complex workflows end-to-end. Always observable, always in your control.",
       primaryCta: { label: "See what we build", href: "#work" },
       secondaryCta: { label: "Talk to an expert", href: "/contact" },
     },
-    features: [
+    statCards: [
+      { accent: "green", value: "70%", label: "Faster Task Completion", icon: "trending-up" },
+      { accent: "blue", value: "24/7", label: "Autonomous Operation", icon: "cpu" },
+      { accent: "orange", value: "30+", label: "Agents Deployed", icon: "award" },
+    ],
+    featureSection: {
+      label: "CAPABILITIES",
+      heading: "Agents that plan,",
+      headingAccent: "reason, and act.",
+      description:
+        "From single-task bots to multi-agent orchestration — we build AI agents that genuinely understand and execute your business logic.",
+      cards: [
+        {
+          accent: "green",
+          title: "Task Automation",
+          description:
+            "Agents that break down complex goals into steps, execute them, and handle errors — without human intervention.",
+          icon: "cpu",
+        },
+        {
+          accent: "blue",
+          title: "Tool Orchestration",
+          description:
+            "Agents that call your APIs, query databases, send emails, and coordinate across multiple systems seamlessly.",
+          icon: "refresh-cw",
+        },
+        {
+          accent: "orange",
+          title: "Guardrails & Safety",
+          description:
+            "Approval workflows, human-in-the-loop checkpoints, and safety layers that keep agents within defined boundaries.",
+          icon: "eye",
+        },
+        {
+          accent: "purple",
+          title: "Multi-Agent Systems",
+          description:
+            "Coordinated agent teams that collaborate on complex workflows — each agent specialized for its domain.",
+          icon: "bot",
+        },
+        {
+          accent: "green",
+          title: "Memory & Context",
+          description:
+            "Agents that remember past interactions, learn from outcomes, and maintain context across sessions.",
+          icon: "search",
+        },
+        {
+          accent: "blue",
+          title: "Monitoring & Observability",
+          description:
+            "Full visibility into every agent decision, tool call, and action — with logs, traces, and performance dashboards.",
+          icon: "layout",
+        },
+      ],
+    },
+    processTimelineSteps: [
       {
-        title: "Task Automation",
-        description: "Agents that execute multi-step workflows autonomously.",
+        week: "Week 1",
+        title: "Use Case Discovery",
+        description:
+          "Map your workflows, identify repetitive tasks, and prioritize agent opportunities by business impact and feasibility.",
+        color: "#15803d",
+        badgeBg: "#d9e7d6",
       },
       {
-        title: "Tool Orchestration",
-        description: "Connecting APIs, databases, and services under agent control.",
+        week: "Week 2–3",
+        title: "Agent Design & Prototype",
+        description:
+          "Design agent architecture — define tools, prompts, guardrails, and memory. Rapid prototype to validate core workflows.",
+        color: "#0e7490",
+        badgeBg: "#cfe2e7",
       },
       {
-        title: "Guardrails",
-        description: "Safety layers, human-in-the-loop, and approval workflows.",
+        week: "Week 4–5",
+        title: "Production Build",
+        description:
+          "Full implementation with tool integrations, error handling, retry logic, human-in-the-loop checkpoints, and observability.",
+        color: "#c2410c",
+        badgeBg: "#f4e0d6",
       },
       {
-        title: "Monitoring",
-        description: "Full visibility into agent decisions, actions, and performance.",
+        week: "Final Week",
+        title: "Deploy & Optimize",
+        description:
+          "Staged rollout with monitoring dashboards, feedback loops, and continuous agent performance optimization.",
+        color: "#1d4ed8",
+        badgeBg: "#cfd9ec",
       },
     ],
-    process: [
-      {
-        step: "01",
-        title: "Identify",
-        description: "Finding high-impact automation opportunities.",
-      },
-      {
-        step: "02",
-        title: "Design",
-        description: "Agent architecture with safety and control built in.",
-      },
-      {
-        step: "03",
-        title: "Deploy",
-        description: "Staged rollout with monitoring and guardrails.",
-      },
-      {
-        step: "04",
-        title: "Optimize",
-        description: "Feedback loops for continuous agent improvement.",
-      },
+    fitComparison: {
+      goodFit: [
+        "You have repetitive, multi-step workflows that follow logic but vary in input",
+        "Your team spends hours on tasks an agent could handle — data entry, research, support",
+        "You need 24/7 operation without scaling your headcount",
+        "You want agents that are observable, controllable, and safe — not black boxes",
+      ],
+      notFit: [
+        "You need a simple if/then chatbot — that's AI Automation, not agentic AI",
+        "Your workflows are undocumented and nobody can describe the steps",
+        "You want zero human oversight — agents should always have guardrails",
+      ],
+    },
+    techStack: [
+      { name: "CrewAI", icon: "SiCrewai" },
+      { name: "LangGraph", icon: "SiLanggraph" },
+      { name: "LangChain", icon: "SiLangchain" },
+      { name: "Ollama", icon: "SiOllama" },
+      { name: "Dify", icon: "SiDify" },
+      { name: "Perplexity", icon: "SiPerplexity" },
+      { name: "Anthropic", icon: "SiAnthropic" },
+      { name: "Google Gemini", icon: "SiGooglegemini" },
+      { name: "Redis", icon: "SiRedis" },
+      { name: "Supabase", icon: "SiSupabase" },
+      { name: "Ray", icon: "SiRay" },
+      { name: "Docker", icon: "SiDocker" },
     ],
     meta: {
       title: "Agentic AI Systems - Kivro Solution",
@@ -949,7 +1165,7 @@ export const services = [
     category: "INTELLIGENCE",
     badgeColor: "green",
     icon: "search",
-    description: "Evaluate your data and systems for AI adoption.",
+    description: "Know exactly where you stand with AI.",
     longDescription:
       "A comprehensive assessment of your data infrastructure, processes, and readiness for AI. Know exactly where you stand and what to do next.",
     heroImage: withBasePath("/images/services/ai-audit.jpg"),
@@ -959,51 +1175,132 @@ export const services = [
       title: "Know exactly where you stand with AI.",
       accentTitle: "Assess. Plan. Execute.",
       description:
-        "A comprehensive assessment of your data infrastructure, processes, and readiness for AI. Know exactly where you stand and what to do next.",
+        "Before you invest in AI, know exactly what's possible. We audit your data, infrastructure, and workflows to find high-ROI AI opportunities — and give you a clear roadmap to act on them.",
       primaryCta: { label: "Start your audit", href: "/contact" },
       secondaryCta: { label: "Learn more", href: "#process" },
     },
-    features: [
+    statCards: [
+      { accent: "green", value: "100+", label: "Audits Completed", icon: "search" },
+      { accent: "blue", value: "85%", label: "Clients Find Hidden ROI", icon: "trending-up" },
+      { accent: "orange", value: "2 Weeks", label: "Average Audit Duration", icon: "cpu" },
+    ],
+    featureSection: {
+      label: "WHAT WE AUDIT",
+      heading: "Every layer of",
+      headingAccent: "your AI readiness.",
+      description:
+        "From data quality to team capability — we leave no stone unturned in understanding where AI can create the most value for you.",
+      cards: [
+        {
+          accent: "green",
+          title: "Data Assessment",
+          description:
+            "Evaluate data quality, volume, accessibility, and structure — the fuel that determines how well your AI will perform.",
+          icon: "search",
+        },
+        {
+          accent: "blue",
+          title: "Infrastructure Review",
+          description:
+            "Audit your tech stack, cloud setup, and APIs for AI compatibility — identify gaps and readiness levels.",
+          icon: "cloud",
+        },
+        {
+          accent: "orange",
+          title: "Use Case Mapping",
+          description:
+            "Identify high-ROI AI opportunities ranked by impact, feasibility, and alignment with your business goals.",
+          icon: "cpu",
+        },
+        {
+          accent: "purple",
+          title: "Process & Workflow Analysis",
+          description:
+            "Map existing workflows to find automation opportunities, bottlenecks, and places where AI adds the most value.",
+          icon: "refresh-cw",
+        },
+        {
+          accent: "green",
+          title: "Team & Capability Review",
+          description:
+            "Assess your team's AI literacy, skill gaps, and readiness to adopt and maintain AI systems.",
+          icon: "eye",
+        },
+        {
+          accent: "blue",
+          title: "AI Roadmap",
+          description:
+            "A phased adoption plan with clear milestones, estimated ROI, and resource requirements — ready to execute.",
+          icon: "layout",
+        },
+      ],
+    },
+    processTimelineSteps: [
       {
-        title: "Data Assessment",
-        description: "Evaluate data quality, accessibility, and readiness for AI workloads.",
+        week: "Week 1",
+        title: "Discovery & Data Collection",
+        description:
+          "Gather documentation, system architecture, data samples, and interview key stakeholders to understand your current state.",
+        color: "#15803d",
+        badgeBg: "#d9e7d6",
       },
       {
-        title: "Infrastructure Review",
-        description: "Audit your tech stack for AI compatibility and gaps.",
+        week: "Week 2",
+        title: "Deep Analysis",
+        description:
+          "Evaluate data quality, infrastructure readiness, process efficiency, and team capability against AI adoption benchmarks.",
+        color: "#0e7490",
+        badgeBg: "#cfe2e7",
       },
       {
-        title: "Use Case Mapping",
-        description: "Identify high-ROI AI opportunities specific to your business.",
+        week: "Week 3",
+        title: "Findings & Recommendations",
+        description:
+          "Present detailed findings with prioritized use cases, estimated ROI, risk assessment, and a clear execution roadmap.",
+        color: "#c2410c",
+        badgeBg: "#f4e0d6",
       },
       {
-        title: "Roadmap",
-        description: "A phased plan for AI adoption with clear milestones.",
+        week: "Ongoing",
+        title: "Advisory & Support",
+        description:
+          "Optional ongoing guidance as you execute the roadmap — vendor evaluation, architecture reviews, and sprint planning.",
+        color: "#1d4ed8",
+        badgeBg: "#cfd9ec",
       },
     ],
-    process: [
-      {
-        step: "01",
-        title: "Gather",
-        description: "Collect data, documentation, and system details.",
-      },
-      {
-        step: "02",
-        title: "Analyze",
-        description: "Deep dive into data quality and infrastructure.",
-      },
-      {
-        step: "03",
-        title: "Report",
-        description: "Findings, recommendations, and prioritized roadmap.",
-      },
-      { step: "04", title: "Guide", description: "Ongoing advisory as you execute the roadmap." },
+    fitComparison: {
+      goodFit: [
+        "You're considering AI but don't know where to start or what's realistic",
+        "You have data and systems but aren't sure if they're AI-ready",
+        "You want a clear, prioritized roadmap before committing resources",
+        "You've tried AI before and it didn't deliver — you need a fresh assessment",
+      ],
+      notFit: [
+        "You already have a clear AI strategy and just need implementation — skip to our services",
+        "You have no data, no processes, and no appetite for change yet",
+        "You want us to build AI without giving us access to your systems or data",
+      ],
+    },
+    techStack: [
+      { name: "Python", icon: "SiPython" },
+      { name: "Jupyter", icon: "SiJupyter" },
+      { name: "Scikit-learn", icon: "SiScikitlearn" },
+      { name: "TensorFlow", icon: "SiTensorflow" },
+      { name: "PyTorch", icon: "SiPytorch" },
+      { name: "Hugging Face", icon: "SiHuggingface" },
+      { name: "Redis", icon: "SiRedis" },
+      { name: "Supabase", icon: "SiSupabase" },
+      { name: "Docker", icon: "SiDocker" },
+      { name: "Kubernetes", icon: "SiKubernetes" },
+      { name: "Firebase", icon: "SiFirebase" },
+      { name: "FastAPI", icon: "SiFastapi" },
     ],
     meta: {
       title: "AI Audit Services - Kivro Solution",
       description:
-        "Comprehensive AI readiness assessment. Evaluate your data, infrastructure, and identify high-ROI AI opportunities.",
-      keywords: ["AI audit", "AI readiness", "data assessment", "AI strategy", "AI adoption"],
+        "Comprehensive AI readiness assessment. Evaluate your data, infrastructure, and identify high-ROI AI opportunities with a clear roadmap.",
+      keywords: ["AI audit", "AI readiness", "data assessment", "AI strategy", "AI adoption", "AI roadmap"],
     },
   },
   {
@@ -1380,6 +1677,26 @@ export const services = [
         },
       ],
     },
+    orbitSphereItems: [
+      "WEBFLOW",
+      "FRAMER",
+      "BUBBLE",
+      "AIRTABLE",
+      "ZAPIER",
+      "MAKE",
+      "NOTION",
+      "SHOPIFY",
+      "STRIPE",
+      "SUPABASE",
+      "MVP",
+      "AUTOMATION",
+    ],
+    orbitSphereSatellites: [
+      { side: "left", top: "14%", value: "3×", label: "Faster to market" },
+      { side: "left", top: "60%", value: "60%", label: "Cost reduction" },
+      { side: "right", top: "22%", value: "50+", label: "Projects shipped" },
+      { side: "right", top: "68%", value: "Weeks", label: "Not months" },
+    ],
     processTimelineSteps: [
       {
         week: "Week 1",
@@ -1541,6 +1858,20 @@ export const services = [
         "You need it live this week — quality AI takes sprints, not days",
       ],
     },
+    techStack: [
+      { name: "Anthropic", icon: "SiAnthropic" },
+      { name: "LangChain", icon: "SiLangchain" },
+      { name: "Google Gemini", icon: "SiGooglegemini" },
+      { name: "Hugging Face", icon: "SiHuggingface" },
+      { name: "Zapier", icon: "SiZapier" },
+      { name: "n8n", icon: "SiN8N" },
+      { name: "Make", icon: "SiMake" },
+      { name: "Python", icon: "SiPython" },
+      { name: "FastAPI", icon: "SiFastapi" },
+      { name: "Supabase", icon: "SiSupabase" },
+      { name: "Redis", icon: "SiRedis" },
+      { name: "Docker", icon: "SiDocker" },
+    ],
     meta: {
       title: "AI Automation Services - Kivro Solution",
       description:

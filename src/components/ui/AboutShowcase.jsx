@@ -8,28 +8,28 @@ import { withBasePath } from "@/lib/paths";
 /* Cards ka data — positions vw/vh mein hain taake responsive rahein */
 const CARDS = [
   {
-    src: withBasePath("/images/image.png"),
+    src: withBasePath("/images/image1.jpeg"),
     alt: "Team collaborating around a laptop",
     x: [-5, -38],
     y: [12, -20],
     rotate: [5, -8],
   },
   {
-    src: withBasePath("/images/image.png"),
+    src: withBasePath("/images/image2.jpeg"),
     alt: "Designer sketching wireframes",
     x: [5, 38],
     y: [10, -20],
     rotate: [-5, 8],
   },
   {
-    src: withBasePath("/images/image.png"),
+    src: withBasePath("/images/image3.jpeg"),
     alt: "Code editor on a dark screen",
     x: [-4, -38],
     y: [18, 20],
     rotate: [4, -7],
   },
   {
-    src: withBasePath("/images/image.png"),
+    src: withBasePath("/images/image4.jpeg"),
     alt: "Sticky notes on a planning board",
     x: [4, 38],
     y: [16, 20],

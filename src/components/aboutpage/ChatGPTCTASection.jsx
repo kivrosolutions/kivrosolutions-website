@@ -1,24 +1,31 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useRef } from "react";
 
 export default function ChatGPTCTASection() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const sectionRef = useRef(null);
 
-  useEffect(() => {
-    const handleMouseMove = (e) => {
-      const rect = e.currentTarget.getBoundingClientRect();
+  // Fixed: Mouse movement ab section ke andar smoothly track hoga
+  const handleMouseMove = (e) => {
+    if (sectionRef.current) {
+      const rect = sectionRef.current.getBoundingClientRect();
       setMousePosition({
         x: (e.clientX - rect.left) / rect.width,
         y: (e.clientY - rect.top) / rect.height,
       });
-    };
+    }
+  };
 
-    return () => window.removeEventListener("mousemove", handleMouseMove);
-  }, []);
+  // Note: ChatGPT ka "?q=" parameter hamesha input box mein text pre-fill karega. 
+  // Yeh ChatGPT ki apni limitation hai. Agar aap chahte hain ke text na aaye, 
+  // toh link ko sirf "https://chat.openai.com/" kar dein (lekin phir user ko question khud paste karna parega).
+  const chatGPTLink = "https://chat.openai.com/?q=How%20does%20KivroSolutions%20improve%20web%20development%2C%20AI%20automation%2C%20and%20product%20delivery%20for%20startups%20and%20small%20businesses%3F%20What%20outcomes%20can%20I%20expect%3F";
 
   return (
     <section
+      ref={sectionRef}
+      onMouseMove={handleMouseMove}
       style={{
         backgroundColor: "#f6f7fb",
         padding: "80px 60px",
@@ -151,7 +158,7 @@ export default function ChatGPTCTASection() {
               overflow: "hidden",
             }}
           >
-            {/* Animated Background Pattern */}
+            {/* Animated Background Pattern (Mouse Follow) */}
             <div
               style={{
                 position: "absolute",
@@ -227,7 +234,11 @@ export default function ChatGPTCTASection() {
                 through exactly why businesses choose us.
               </p>
 
-              <button
+              {/* ChatGPT Button */}
+              <a
+                href={chatGPTLink}
+                target="_blank"
+                rel="noopener noreferrer"
                 style={{
                   backgroundColor: "#0137a2",
                   color: "#ffffff",
@@ -237,7 +248,7 @@ export default function ChatGPTCTASection() {
                   border: "none",
                   borderRadius: "9999px",
                   cursor: "pointer",
-                  display: "flex",
+                  display: "inline-flex",
                   alignItems: "center",
                   gap: "12px",
                   transition: "all 0.3s ease",
@@ -245,6 +256,7 @@ export default function ChatGPTCTASection() {
                   letterSpacing: "0.5px",
                   position: "relative",
                   overflow: "hidden",
+                  textDecoration: "none",
                 }}
                 onMouseEnter={(e) => {
                   e.currentTarget.style.backgroundColor = "#0b1b3f";
@@ -280,7 +292,7 @@ export default function ChatGPTCTASection() {
                 >
                   <path d="M5 12h14M12 5l7 7-7 7" />
                 </svg>
-              </button>
+              </a>
             </div>
 
             {/* Right Side - Illustration */}
@@ -318,46 +330,24 @@ export default function ChatGPTCTASection() {
       {/* CSS Animations */}
       <style jsx>{`
         @keyframes borderGlow {
-          0%, 100% {
-            background-position: 0% 50%;
-          }
-          50% {
-            background-position: 100% 50%;
-          }
+          0%, 100% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
         }
 
         @keyframes circuitMove {
-          0%, 100% {
-            transform: translateX(0) translateY(-50%);
-            opacity: 0;
-          }
-          50% {
-            opacity: 1;
-          }
-          100% {
-            transform: translateX(300px) translateY(-50%);
-            opacity: 0;
-          }
+          0%, 100% { transform: translateX(0) translateY(-50%); opacity: 0; }
+          50% { opacity: 1; }
+          100% { transform: translateX(300px) translateY(-50%); opacity: 0; }
         }
 
         @keyframes pulse {
-          0%, 100% {
-            transform: scale(1);
-            opacity: 1;
-          }
-          50% {
-            transform: scale(1.5);
-            opacity: 0.5;
-          }
+          0%, 100% { transform: scale(1); opacity: 1; }
+          50% { transform: scale(1.5); opacity: 0.5; }
         }
 
         @keyframes float {
-          0%, 100% {
-            transform: translateY(0px);
-          }
-          50% {
-            transform: translateY(-20px);
-          }
+          0%, 100% { transform: translateY(0px); }
+          50% { transform: translateY(-20px); }
         }
 
         .ai-corner-node {
@@ -380,35 +370,14 @@ export default function ChatGPTCTASection() {
           opacity: 0.5;
         }
 
-        .ai-corner-node.top-left {
-          top: -20px;
-          left: -20px;
-        }
-
-        .ai-corner-node.top-right {
-          top: -20px;
-          right: -20px;
-        }
-
-        .ai-corner-node.bottom-left {
-          bottom: -20px;
-          left: -20px;
-        }
-
-        .ai-corner-node.bottom-right {
-          bottom: -20px;
-          right: -20px;
-        }
+        .ai-corner-node.top-left { top: -20px; left: -20px; }
+        .ai-corner-node.top-right { top: -20px; right: -20px; }
+        .ai-corner-node.bottom-left { bottom: -20px; left: -20px; }
+        .ai-corner-node.bottom-right { bottom: -20px; right: -20px; }
 
         @keyframes cornerPulse {
-          0%, 100% {
-            transform: scale(1);
-            box-shadow: 0 0 20px rgba(1, 55, 162, 0.4);
-          }
-          50% {
-            transform: scale(1.05);
-            box-shadow: 0 0 30px rgba(59, 123, 240, 0.6);
-          }
+          0%, 100% { transform: scale(1); box-shadow: 0 0 20px rgba(1, 55, 162, 0.4); }
+          50% { transform: scale(1.05); box-shadow: 0 0 30px rgba(59, 123, 240, 0.6); }
         }
 
         .ai-particle {
@@ -422,16 +391,10 @@ export default function ChatGPTCTASection() {
         }
 
         @keyframes particleFloat {
-          0%, 100% {
-            transform: translate(0, 0) scale(1);
-            opacity: 0.6;
-          }
-          50% {
-            transform: translate(10px, -15px) scale(1.2);
-            opacity: 1;
-          }
+          0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.6; }
+          50% { transform: translate(10px, -15px) scale(1.2); opacity: 1; }
         }
       `}</style>
     </section>
   );
-};
+}

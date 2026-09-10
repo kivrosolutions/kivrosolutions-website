@@ -30,6 +30,8 @@ export default function MobileAppPage() {
       comparisonTable={service.comparisonTable}
       ctaBanner={service.ctaBanner}
       beforeCta={<CostEstimator />}
+      orbitSphereItems={service.orbitSphereItems}
+      orbitSphereSatellites={service.orbitSphereSatellites}
     />
   );
 }

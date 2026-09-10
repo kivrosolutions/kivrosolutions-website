@@ -16,33 +16,33 @@ export default function WhyUsSection() {
   const comparisonData = [
     {
       feature: "Consultative Approach",
-      kivro: 'We act as a partner. We look through a "buyer lens" and co-own the result',
-      traditional: "They just build what's requested, even when the story/flow doesn't add up",
+      kivro: "We act as a technical partner, not just a vendor — we challenge assumptions, shape the product strategy, and co-own the outcome with you.",
+      traditional: "They just build what's requested, even when the logic or user flow doesn't hold up.",
     },
     {
-      feature: "Premium service",
-      kivro: "Senior-led craft + strategy with clear ownership from kickoff to launch.",
-      traditional: 'Often packaged as "deliverables" with limited senior time.',
+      feature: "Startup-Speed Delivery",
+      kivro: "Production-ready builds shipped in 6–8 weeks, with weekly increments you can see and test — no black-box timelines.",
+      traditional: "Long, rigid timelines with milestones locked months in advance.",
     },
     {
-      feature: "Mid-market & enterprise focus",
-      kivro: "Built for complex buying cycles, stakeholder alignment, and high-stakes credibility.",
-      traditional: "Built for mixed client sizes; enterprise nuance can get missed.",
+      feature: "Senior-Led Execution",
+      kivro: "Every project is led by senior engineers and designers from day one — no junior hand-offs.",
+      traditional: "Senior staff sell the project; junior teams quietly execute it.",
     },
     {
-      feature: "Result-oriented strategy",
-      kivro: "We design for clarity, trust, and action with outcomes you can track (demos, lead quality)",
-      traditional: '"Looks great" is the finish line.',
+      feature: "AI & Automation Built-In",
+      kivro: "We build AI automation directly into your product — lead qualification, workflows, and data-driven features from the start.",
+      traditional: "AI is treated as an add-on, bolted on after the core build is 'done.'",
     },
     {
-      feature: "In-house PMM team",
-      kivro: "In-house PMMs drive positioning and messaging before design begins",
-      traditional: 'Copy or strategy is often outsourced or "added later."',
+      feature: "Startup & Small Business Focus",
+      kivro: "Built for lean teams — fast decisions, flexible scope, and pricing that respects a startup budget.",
+      traditional: "Processes built for enterprise clients, which slows down smaller teams and inflates cost.",
     },
     {
-      feature: "B2B industry expertise",
-      kivro: "100% B2B-first thinking; messaging, proof, and journeys tailored to evaluation-led buying.",
-      traditional: 'Generalist exposure; B2B is "one of many."',
+      feature: "Result-Oriented Strategy",
+      kivro: "We design for outcomes you can measure — user activation, conversions, and product-market fit signals.",
+      traditional: "'Looks great' is treated as the finish line, with no tracking of real results.",
     },
   ];
 

@@ -114,7 +114,7 @@ export default function ContactHero() {
                     lineHeight: 1,
                   }}
                 >
-                  98%
+                  61%
                 </div>
                 <div style={{ fontSize: "14px", color: "#64748b", marginTop: "4px" }}>
                   Increase in Leads
@@ -129,7 +129,7 @@ export default function ContactHero() {
                     lineHeight: 1,
                   }}
                 >
-                  94%
+                  64%
                 </div>
                 <div style={{ fontSize: "14px", color: "#64748b", marginTop: "4px" }}>
                   Increase in User Engagement
