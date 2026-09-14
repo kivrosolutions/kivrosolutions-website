@@ -222,34 +222,41 @@ export default function BeforeAfterComparison() {
 
         {/* CTA Button */}
         <div style={{ textAlign: "center" }}>
-          <button
-            style={{
-              backgroundColor: "#0137a2",
-              color: "#ffffff",
-              padding: "16px 32px",
-              fontSize: "14px",
-              fontWeight: 600,
-              border: "none",
-              borderRadius: "8px",
-              cursor: "pointer",
-              display: "inline-flex",
-              alignItems: "center",
-              gap: "12px",
-              transition: "all 0.3s ease",
-              letterSpacing: "0.5px",
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.backgroundColor = "#0b1b3f";
-              e.currentTarget.style.transform = "translateY(-2px)";
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.backgroundColor = "#0137a2";
-              e.currentTarget.style.transform = "translateY(0)";
-            }}
+          <a
+            href="https://koalendar.com/u/kivrosolutions"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none" }}
           >
-            BOOK YOUR STRATEGY SESSION
-            <ArrowRight size={18} />
-          </button>
+            <button
+              style={{
+                backgroundColor: "#0137a2",
+                color: "#ffffff",
+                padding: "16px 32px",
+                fontSize: "14px",
+                fontWeight: 600,
+                border: "none",
+                borderRadius: "8px",
+                cursor: "pointer",
+                display: "inline-flex",
+                alignItems: "center",
+                gap: "12px",
+                transition: "all 0.3s ease",
+                letterSpacing: "0.5px",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = "#0b1b3f";
+                e.currentTarget.style.transform = "translateY(-2px)";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = "#0137a2";
+                e.currentTarget.style.transform = "translateY(0)";
+              }}
+            >
+              BOOK YOUR STRATEGY SESSION
+              <ArrowRight size={18} />
+            </button>
+          </a>
         </div>
       </div>
     </section>

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { CheckCircle, FileText, Clock } from "lucide-react";
+import { CheckCircle, FileText, Clock, Loader2 } from "lucide-react";
 
 export default function ContactHero() {
   const [formData, setFormData] = useState({
@@ -14,15 +14,40 @@ export default function ContactHero() {
     source: "",
     message: "",
   });
+  const [status, setStatus] = useState(null);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(formData);
-    alert("Thank you! We'll contact you soon.");
+    setStatus("loading");
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+      const data = await response.json();
+      if (!response.ok) {
+        setStatus({ type: "error", message: data.error || "Something went wrong. Please try again." });
+        return;
+      }
+      setStatus({ type: "success", message: "Thank you! We'll contact you soon." });
+      setFormData({
+        firstName: "",
+        lastName: "",
+        phone: "",
+        email: "",
+        company: "",
+        budget: "",
+        source: "",
+        message: "",
+      });
+    } catch (err) {
+      setStatus({ type: "error", message: "Something went wrong. Please try again." });
+    }
   };
 
   const expectations = [
@@ -206,6 +231,44 @@ export default function ContactHero() {
               color: "#ffffff",
             }}
           >
+            {status?.type === "success" ? (
+              <div style={{ textAlign: "center", padding: "48px 0" }}>
+                <div
+                  style={{
+                    width: "64px",
+                    height: "64px",
+                    borderRadius: "50%",
+                    backgroundColor: "rgba(46, 204, 113, 0.15)",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    margin: "0 auto 20px",
+                  }}
+                >
+                  <CheckCircle size={32} color="#2ecc71" />
+                </div>
+                <div
+                  style={{
+                    fontSize: "20px",
+                    fontWeight: 700,
+                    color: "#ffffff",
+                    marginBottom: "8px",
+                  }}
+                >
+                  Your form has been submitted successfully!
+                </div>
+                <div
+                  style={{
+                    fontSize: "14px",
+                    color: "#93a4c9",
+                    lineHeight: 1.6,
+                  }}
+                >
+                  Thank you! We&apos;ll contact you soon.
+                </div>
+              </div>
+            ) : (
+              <>
             <div
               style={{
                 display: "flex",
@@ -261,6 +324,7 @@ export default function ContactHero() {
                     name="firstName"
                     value={formData.firstName}
                     onChange={handleChange}
+                    required
                     placeholder="Enter your first name"
                     style={{
                       width: "100%",
@@ -283,6 +347,7 @@ export default function ContactHero() {
                     name="lastName"
                     value={formData.lastName}
                     onChange={handleChange}
+                    required
                     placeholder="Enter your last name"
                     style={{
                       width: "100%",
@@ -315,6 +380,7 @@ export default function ContactHero() {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
+                    required
                     placeholder="+1"
                     style={{
                       width: "100%",
@@ -337,6 +403,7 @@ export default function ContactHero() {
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
+                    required
                     placeholder="Enter your email"
                     style={{
                       width: "100%",
@@ -369,6 +436,7 @@ export default function ContactHero() {
                     name="company"
                     value={formData.company}
                     onChange={handleChange}
+                    required
                     placeholder="Enter your company name"
                     style={{
                       width: "100%",
@@ -463,6 +531,7 @@ export default function ContactHero() {
 
               <button
                 type="submit"
+                disabled={status === "loading"}
                 style={{
                   width: "100%",
                   padding: "14px",
@@ -472,19 +541,50 @@ export default function ContactHero() {
                   borderRadius: "8px",
                   fontSize: "14px",
                   fontWeight: 600,
-                  cursor: "pointer",
+                  cursor: status === "loading" ? "not-allowed" : "pointer",
+                  opacity: status === "loading" ? 0.7 : 1,
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  gap: "8px",
                   transition: "all 0.3s ease",
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.backgroundColor = "#0b1b3f";
+                  if (status !== "loading") e.currentTarget.style.backgroundColor = "#0b1b3f";
                 }}
                 onMouseLeave={(e) => {
                   e.currentTarget.style.backgroundColor = "#0137a2";
                 }}
               >
-                Submit
+                {status === "loading" ? (
+                  <>
+                    <Loader2 size={18} style={{ animation: "spin 1s linear infinite" }} />
+                    Sending...
+                  </>
+                ) : (
+                  "Submit"
+                )}
               </button>
-            </form>
+              {status?.type === "error" && (
+                <div
+                  style={{
+                    marginTop: "16px",
+                    padding: "12px",
+                    backgroundColor: "rgba(231, 76, 60, 0.15)",
+                    border: "1px solid rgba(231, 76, 60, 0.4)",
+                    borderRadius: "8px",
+                    color: "#f5b7b1",
+                    fontSize: "13px",
+                    textAlign: "center",
+                  }}
+                >
+                  {status.message}
+                </div>
+              )}
+              <style>{`@keyframes spin { to { transform: rotate(360deg); } }`}</style>
+              </form>
+              </>
+            )}
           </div>
         </div>
       </div>
