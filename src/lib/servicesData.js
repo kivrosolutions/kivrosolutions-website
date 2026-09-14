@@ -268,7 +268,7 @@ export const services = [
       { name: "Behance", icon: "SiBehance" },
     ],
     meta: {
-      title: "UX/UI Design Services - Kivro Solution",
+      title: "UX/UI Design Services - Kivro Solutions",
       description:
         "Professional UX/UI design services. We create intuitive, user-centered interfaces that drive engagement and satisfaction.",
       keywords: ["UX design", "UI design", "user experience", "interface design", "prototyping"],
@@ -569,7 +569,7 @@ export const services = [
       { step: "04", title: "Launch", description: "Store submission, monitoring, and iteration." },
     ],
     meta: {
-      title: "Mobile App Development - Kivro Solution",
+      title: "Mobile App Development - Kivro Solutions",
       description:
         "Custom mobile app development for iOS and Android. Native and cross-platform solutions built for scale and performance.",
       keywords: [
@@ -721,7 +721,7 @@ export const services = [
       ],
     },
     meta: {
-      title: "Web App Development - Kivro Solution",
+      title: "Web App Development - Kivro Solutions",
       description:
         "Scalable web application development using modern frameworks. From MVPs to enterprise platforms.",
       keywords: [
@@ -790,7 +790,7 @@ export const services = [
       },
     ],
     meta: {
-      title: "Cloud Development Services - Kivro Solution",
+      title: "Cloud Development Services - Kivro Solutions",
       description:
         "Cloud architecture, migration, and DevOps services. AWS, GCP, and Azure solutions built for scale.",
       keywords: ["cloud development", "AWS", "cloud migration", "DevOps", "cloud architecture"],
@@ -934,7 +934,7 @@ export const services = [
       { name: "Weights & Biases", icon: "SiWeightsandbiases" },
     ],
     meta: {
-      title: "AI-Native Development - Kivro Solution",
+      title: "AI-Native Development - Kivro Solutions",
       description:
         "AI-native application development. LLM integration, RAG pipelines, fine-tuning, and intelligent features built into your product from day one.",
       keywords: ["AI development", "LLM integration", "RAG pipelines", "AI-native apps", "fine-tuning", "machine learning"],
@@ -1078,7 +1078,7 @@ export const services = [
       { name: "Docker", icon: "SiDocker" },
     ],
     meta: {
-      title: "Agentic AI Systems - Kivro Solution",
+      title: "Agentic AI Systems - Kivro Solutions",
       description:
         "Autonomous AI agents for task automation and workflow orchestration. Safe, observable, and production-ready.",
       keywords: [
@@ -1147,7 +1147,7 @@ export const services = [
       { step: "04", title: "Analyze", description: "Data pipelines and actionable insights." },
     ],
     meta: {
-      title: "IoT & Device Development - Kivro Solution",
+      title: "IoT & Device Development - Kivro Solutions",
       description:
         "End-to-end IoT development — embedded systems, edge computing, connectivity, and real-time analytics.",
       keywords: [
@@ -1297,7 +1297,7 @@ export const services = [
       { name: "FastAPI", icon: "SiFastapi" },
     ],
     meta: {
-      title: "AI Audit Services - Kivro Solution",
+      title: "AI Audit Services - Kivro Solutions",
       description:
         "Comprehensive AI readiness assessment. Evaluate your data, infrastructure, and identify high-ROI AI opportunities with a clear roadmap.",
       keywords: ["AI audit", "AI readiness", "data assessment", "AI strategy", "AI adoption", "AI roadmap"],
@@ -1449,7 +1449,7 @@ export const services = [
       },
     ],
     meta: {
-      title: "AI Growth Engine - Kivro Solution",
+      title: "AI Growth Engine - Kivro Solutions",
       description:
         "Data-driven growth services for digital products. A/B testing, analytics, and AI-powered insights to scale your product.",
       keywords: [
@@ -1603,7 +1603,7 @@ export const services = [
       },
     ],
     meta: {
-      title: "Digital Marketing Services - Kivro Solution",
+      title: "Digital Marketing Services - Kivro Solutions",
       description:
         "Full-funnel digital marketing — SEO, paid advertising, CRO, and analytics. Data-backed campaigns that drive growth.",
       keywords: [
@@ -1737,7 +1737,7 @@ export const services = [
       ],
     },
     meta: {
-      title: "No/Low Code Development - Kivro Solution",
+      title: "No/Low Code Development - Kivro Solutions",
       description:
         "Rapid prototyping and deployment with no-code and low-code platforms. MVPs, internal tools, and automation workflows.",
       keywords: [
@@ -1873,7 +1873,7 @@ export const services = [
       { name: "Docker", icon: "SiDocker" },
     ],
     meta: {
-      title: "AI Automation Services - Kivro Solution",
+      title: "AI Automation Services - Kivro Solutions",
       description:
         "Intelligent AI automation for workflows, document processing, data extraction, and communication. Scale operations without scaling your team.",
       keywords: [
@@ -1993,7 +1993,7 @@ export const services = [
       ],
     },
     meta: {
-      title: "App/Website Marketing - Kivro Solution",
+      title: "App/Website Marketing - Kivro Solutions",
       description:
         "Full-funnel marketing for apps and websites. SEO, paid advertising, CRO, and analytics. Data-driven growth strategies.",
       keywords: [

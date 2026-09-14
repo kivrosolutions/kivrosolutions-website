@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Blog - Kivro Solution",
+  title: "Blog - Kivro Solutions",
   description: "Read our latest articles and insights.",
 };
 

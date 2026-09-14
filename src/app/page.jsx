@@ -21,7 +21,7 @@ const stats = [
 ];
 
 export const metadata = {
-  title: "Kivro Solution - Software Agency",
+  title: "Kivro Solutions - Software Agency",
   description:
     "We build innovative software solutions. Strategy, design, and engineering from our senior team.",
 };

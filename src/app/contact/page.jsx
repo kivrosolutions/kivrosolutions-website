@@ -5,7 +5,7 @@ import PipelineResults from "@/components/contactpage/PipelineResults";
 import ChatGPTCTASection from "@/components/aboutpage/ChatGPTCTASection";
 
 export const metadata = {
-  title: "Contact Us - Kivro Solution",
+  title: "Contact Us - Kivro Solutions",
   description: "Get in touch with Kivro Solutions. Book a free strategy session and transform your business.",
 };
 

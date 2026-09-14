@@ -14,7 +14,7 @@ import {
 } from "lucide-react";
 
 export const metadata = {
-  title: "Services - Kivro Solution",
+  title: "Services - Kivro Solutions",
   description:
     "Explore our full range of services: UX/UI design, mobile and web development, cloud, AI, IoT, growth strategy, and app marketing.",
   keywords: [
